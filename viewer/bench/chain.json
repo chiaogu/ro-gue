@@ -1,0 +1,9106 @@
+{
+ "party": "劍士（坦十・防禦型）/法師（火法）/服事（輔助祭）",
+ "start": {
+  "blv": 10,
+  "jlv": 1
+ },
+ "shift": 9,
+ "maps": [
+  {
+   "level": 1,
+   "phase": "普通",
+   "map": "moc_fild12",
+   "label": "蘇克拉特沙漠",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 20,
+   "drop": 0.952,
+   "win": 0.99,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 1,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1113,
+     1113,
+     1113
+    ],
+    [
+     1113,
+     1113
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.8166666666666671,
+    "deaths": 0.105,
+    "T": 31.22472,
+    "timedOut": 0,
+    "dry": 1
+   },
+   "econ": {
+    "zeny": 0,
+    "bag": {},
+    "bought": {},
+    "cost": 0,
+    "income": 18,
+    "drunk": {},
+    "after": {
+     "zeny": 18,
+     "bag": {}
+    }
+   },
+   "fights": 849,
+   "timedOut": 0,
+   "s": 11,
+   "hard": {
+    "level": 1,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_fild08",
+    "label": "普隆德拉原野",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     6,
+     6
+    ],
+    "k": 1,
+    "income": 30,
+    "drop": 0.403,
+    "win": 0.97,
+    "planned": {
+     "N": 12,
+     "k": 1,
+     "wins": 97,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      2398,
+      2398,
+      2398,
+      2398,
+      2398,
+      2398
+     ],
+     [
+      2398,
+      2398,
+      2398,
+      2398,
+      2398,
+      2398
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.995,
+     "margin": 0.8012015503875978,
+     "deaths": 0.075,
+     "T": 44.944239999999965,
+     "timedOut": 0,
+     "dry": 0.995
+    },
+    "econ": {
+     "income": 21,
+     "drunk": {}
+    },
+    "fights": 10911,
+    "timedOut": 0,
+    "s": 296
+   }
+  },
+  {
+   "level": 2,
+   "phase": "特殊",
+   "map": "prt_fild08",
+   "label": "普隆德拉原野",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 44,
+   "drop": 0.751,
+   "win": 0.979,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 98,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": true,
+   "waves": [
+    [
+     1002,
+     1063,
+     2398
+    ],
+    [
+     1063,
+     2398,
+     1002
+    ],
+    [
+     2398,
+     1002,
+     1063
+    ],
+    [
+     1002,
+     1063
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.985,
+    "margin": 0.6972452752670502,
+    "deaths": 0.055,
+    "T": 48.47504,
+    "timedOut": 0,
+    "dry": 0.985
+   },
+   "econ": {
+    "zeny": 18,
+    "bag": {},
+    "bought": {},
+    "cost": 0,
+    "income": 34,
+    "drunk": {},
+    "after": {
+     "zeny": 52,
+     "bag": {}
+    }
+   },
+   "fights": 955,
+   "timedOut": 0,
+   "s": 21,
+   "hard": {
+    "level": 2,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "xmas_dun01",
+    "label": "薑餅城玩具工廠倉庫",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     5,
+     5,
+     4,
+     4
+    ],
+    "k": 1,
+    "income": 66,
+    "drop": 0.952,
+    "win": 0.938,
+    "planned": {
+     "N": 18,
+     "k": 1,
+     "wins": 94,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": true,
+    "waves": [
+     [
+      1113,
+      1002,
+      1113,
+      1002,
+      1113
+     ],
+     [
+      1002,
+      1113,
+      1002,
+      1113,
+      1002
+     ],
+     [
+      1113,
+      1002,
+      1113,
+      1002
+     ],
+     [
+      1002,
+      1113,
+      1002,
+      1113
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.935,
+     "margin": 0.6567810188989316,
+     "deaths": 0.12,
+     "T": 120.05015999999992,
+     "timedOut": 11,
+     "dry": 0.935
+    },
+    "econ": {
+     "income": 69,
+     "drunk": {}
+    },
+    "fights": 4108,
+    "timedOut": 52,
+    "s": 117
+   }
+  },
+  {
+   "level": 3,
+   "phase": "BOSS",
+   "map": "gef_fild04",
+   "label": "吉芬原野",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    4,
+    2,
+    2
+   ],
+   "filler": 2398,
+   "k": 1,
+   "income": 72,
+   "drop": 1.142,
+   "win": 0.957,
+   "planned": {
+    "N": 7,
+    "k": 1,
+    "wins": 96,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1007,
+     1011,
+     1007,
+     2398
+    ],
+    [
+     1011,
+     1007
+    ],
+    [
+     1020,
+     1007
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.4862475021410221,
+    "deaths": 0.85,
+    "T": 67.77543999999997,
+    "timedOut": 0,
+    "dry": 0.645
+   },
+   "econ": {
+    "zeny": 52,
+    "bag": {
+     "501": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 1,
+     "645": 1
+    },
+    "cost": 50,
+    "income": 95,
+    "drunk": {
+     "501": 0.95,
+     "645": 1
+    },
+    "after": {
+     "zeny": 97,
+     "bag": {}
+    }
+   },
+   "fights": 1302,
+   "timedOut": 0,
+   "s": 50,
+   "hard": {
+    "level": 3,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     4,
+     4,
+     4,
+     3
+    ],
+    "k": 1,
+    "income": 108,
+    "drop": 2.133,
+    "win": 0.872,
+    "planned": {
+     "N": 14,
+     "k": 1,
+     "wins": 88,
+     "runs": 94
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": true,
+    "waves": [
+     [
+      1007,
+      1007,
+      1007,
+      1007
+     ],
+     [
+      1007,
+      1007,
+      1007,
+      1007
+     ],
+     [
+      1007,
+      1007,
+      1007,
+      1007
+     ],
+     [
+      1007,
+      1007,
+      1007
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.865,
+     "margin": 0.43861404510419655,
+     "deaths": 0.98,
+     "T": 212.99608000000003,
+     "timedOut": 0,
+     "dry": 0.77
+    },
+    "econ": {
+     "income": 153,
+     "drunk": {
+      "501": 0.96,
+      "645": 1
+     }
+    },
+    "fights": 15366,
+    "timedOut": 11,
+    "s": 702
+   }
+  },
+  {
+   "level": 4,
+   "phase": "普通",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 61,
+   "drop": 1.422,
+   "win": 0.989,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1011,
+     1011,
+     1011
+    ],
+    [
+     1011,
+     1011,
+     1011
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.995,
+    "margin": 0.5536891350009551,
+    "deaths": 0.015,
+    "T": 20.03672,
+    "timedOut": 0,
+    "dry": 0.625
+   },
+   "econ": {
+    "zeny": 97,
+    "bag": {
+     "501": 3
+    },
+    "bought": {
+     "501": 3
+    },
+    "cost": 90,
+    "income": 56,
+    "drunk": {
+     "501": 1.63
+    },
+    "after": {
+     "zeny": 63,
+     "bag": {
+      "501": 1
+     }
+    }
+   },
+   "fights": 1416,
+   "timedOut": 0,
+   "s": 83,
+   "hard": {
+    "level": 4,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_fild08",
+    "label": "普隆德拉原野",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     3,
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 92,
+    "drop": 1.051,
+    "win": 0.967,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 97,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1007,
+      1008,
+      1007
+     ],
+     [
+      1008,
+      1007,
+      1008
+     ],
+     [
+      1007,
+      1008
+     ],
+     [
+      1008,
+      1007
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.965,
+     "margin": 0.7220717968302464,
+     "deaths": 0.105,
+     "T": 48.36383999999998,
+     "timedOut": 0,
+     "dry": 0.97
+    },
+    "econ": {
+     "income": 99,
+     "drunk": {
+      "501": 0.02
+     }
+    },
+    "fights": 2291,
+    "timedOut": 0,
+    "s": 195
+   }
+  },
+  {
+   "level": 5,
+   "phase": "特殊",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 91,
+   "drop": 1.047,
+   "win": 0.977,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 98,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": true,
+   "waves": [
+    [
+     1011,
+     1063,
+     1007
+    ],
+    [
+     1063,
+     1007,
+     1008
+    ],
+    [
+     1007,
+     1008,
+     1011
+    ],
+    [
+     1008,
+     1011
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.985,
+    "margin": 0.6612091828277807,
+    "deaths": 0.045,
+    "T": 43.876640000000016,
+    "timedOut": 0,
+    "dry": 0.985
+   },
+   "econ": {
+    "zeny": 63,
+    "bag": {
+     "501": 3
+    },
+    "bought": {
+     "501": 2
+    },
+    "cost": 60,
+    "income": 91,
+    "drunk": {
+     "501": 0.06
+    },
+    "after": {
+     "zeny": 94,
+     "bag": {
+      "501": 3
+     }
+    }
+   },
+   "fights": 2858,
+   "timedOut": 0,
+   "s": 71,
+   "hard": {
+    "level": 5,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "gef_fild04",
+    "label": "吉芬原野",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "k": 1,
+    "income": 137,
+    "drop": 1.423,
+    "win": 0.932,
+    "planned": {
+     "N": 16,
+     "k": 1,
+     "wins": 94,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": true,
+    "waves": [
+     [
+      1063,
+      1007,
+      1011,
+      1063
+     ],
+     [
+      1007,
+      1011,
+      1063,
+      1007
+     ],
+     [
+      1011,
+      1063,
+      1007,
+      1011
+     ],
+     [
+      1063,
+      1007,
+      1011,
+      1063
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.945,
+     "margin": 0.4526172716724679,
+     "deaths": 0.215,
+     "T": 61.62528000000001,
+     "timedOut": 0,
+     "dry": 0.27
+    },
+    "econ": {
+     "income": 144,
+     "drunk": {
+      "501": 2.22
+     }
+    },
+    "fights": 3561,
+    "timedOut": 0,
+    "s": 114
+   }
+  },
+  {
+   "level": 6,
+   "phase": "BOSS",
+   "map": "treasure_n1",
+   "label": "依斯魯得島 遇難船 1樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 126,
+   "drop": 2.657,
+   "win": 0.953,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 96,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     2404,
+     2404,
+     2404
+    ],
+    [
+     2404,
+     2404,
+     2404
+    ],
+    [
+     2405,
+     2404
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.96,
+    "margin": 0.48510639721627397,
+    "deaths": 0.18,
+    "T": 62.10408000000003,
+    "timedOut": 0,
+    "dry": 0.215
+   },
+   "econ": {
+    "zeny": 94,
+    "bag": {
+     "501": 6
+    },
+    "bought": {
+     "501": 3
+    },
+    "cost": 90,
+    "income": 131,
+    "drunk": {
+     "501": 3.73
+    },
+    "after": {
+     "zeny": 135,
+     "bag": {
+      "501": 2
+     }
+    }
+   },
+   "fights": 872,
+   "timedOut": 0,
+   "s": 88,
+   "hard": {
+    "level": 6,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "mjolnir_09",
+    "label": "妙勒妙勒尼山脈 南邊山麓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 189,
+    "drop": 2.235,
+    "win": 0.86,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 86,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1010,
+      1010
+     ],
+     [
+      1010,
+      1010
+     ],
+     [
+      1167,
+      1010
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.85,
+     "margin": 0.4226900428265525,
+     "deaths": 0.715,
+     "T": 41.95544000000001,
+     "timedOut": 0,
+     "dry": 0.625
+    },
+    "econ": {
+     "income": 228,
+     "drunk": {
+      "501": 1.32
+     }
+    },
+    "fights": 592,
+    "timedOut": 0,
+    "s": 41
+   }
+  },
+  {
+   "level": 7,
+   "phase": "普通",
+   "map": "gef_fild01",
+   "label": "吉芬原野",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 95,
+   "drop": 1.616,
+   "win": 0.988,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1012,
+     1012,
+     1012
+    ],
+    [
+     1012,
+     1012,
+     1012
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.4409502768940733,
+    "deaths": 0.04,
+    "T": 47.760880000000014,
+    "timedOut": 0,
+    "dry": 0.09
+   },
+   "econ": {
+    "zeny": 135,
+    "bag": {
+     "501": 6
+    },
+    "bought": {
+     "501": 4
+    },
+    "cost": 120,
+    "income": 94,
+    "drunk": {
+     "501": 4.01
+    },
+    "after": {
+     "zeny": 109,
+     "bag": {
+      "501": 2
+     }
+    }
+   },
+   "fights": 1460,
+   "timedOut": 0,
+   "s": 73,
+   "hard": {
+    "level": 7,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "moc_fild12",
+    "label": "蘇克拉特沙漠",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     5,
+     3,
+     3,
+     3
+    ],
+    "filler": 1113,
+    "k": 1,
+    "income": 143,
+    "drop": 3.696,
+    "win": 0.964,
+    "planned": {
+     "N": 13,
+     "k": 1,
+     "wins": 97,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1049,
+      1050,
+      1047,
+      1049,
+      1113
+     ],
+     [
+      1050,
+      1047,
+      1049
+     ],
+     [
+      1047,
+      1049,
+      1050
+     ],
+     [
+      1049,
+      1050,
+      1047
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 1,
+     "margin": 0.44213974313656174,
+     "deaths": 0.02,
+     "T": 87.25488000000001,
+     "timedOut": 0,
+     "dry": 0.145
+    },
+    "econ": {
+     "income": 139,
+     "drunk": {
+      "501": 3.69
+     }
+    },
+    "fights": 1399,
+    "timedOut": 0,
+    "s": 61
+   }
+  },
+  {
+   "level": 8,
+   "phase": "特殊",
+   "map": "moc_fild11",
+   "label": "蘇克拉特沙漠",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 132,
+   "drop": 8.14,
+   "win": 0.975,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": true,
+   "waves": [
+    [
+     1107,
+     1107
+    ],
+    [
+     1107,
+     1107
+    ],
+    [
+     1107,
+     1107
+    ],
+    [
+     1107,
+     1107
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.975,
+    "margin": 0.4352921527570045,
+    "deaths": 0.095,
+    "T": 88.21224000000004,
+    "timedOut": 0,
+    "dry": 0.455
+   },
+   "econ": {
+    "zeny": 109,
+    "bag": {
+     "501": 5
+    },
+    "bought": {
+     "501": 3
+    },
+    "cost": 90,
+    "income": 139,
+    "drunk": {
+     "501": 2.45
+    },
+    "after": {
+     "zeny": 158,
+     "bag": {
+      "501": 3
+     }
+    }
+   },
+   "fights": 2748,
+   "timedOut": 0,
+   "s": 95,
+   "hard": {
+    "level": 8,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "treasure_n1",
+    "label": "依斯魯得島 遇難船 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 198,
+    "drop": 0.684,
+    "win": 0.926,
+    "planned": {
+     "N": 8,
+     "k": 1,
+     "wins": 93,
+     "runs": 96
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1015,
+      1012
+     ],
+     [
+      1015,
+      1012
+     ],
+     [
+      1015,
+      1012
+     ],
+     [
+      1015,
+      1012
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.96,
+     "margin": 0.4232904576727492,
+     "deaths": 0.195,
+     "T": 103.58472000000003,
+     "timedOut": 0,
+     "dry": 0.14
+    },
+    "econ": {
+     "income": 174,
+     "drunk": {
+      "501": 3.89
+     }
+    },
+    "fights": 1472,
+    "timedOut": 0,
+    "s": 99
+   }
+  },
+  {
+   "level": 9,
+   "phase": "BOSS",
+   "map": "gef_dun01",
+   "label": "吉芬地下密穴 2樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 174,
+   "drop": 0.348,
+   "win": 0.949,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 95,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1015,
+     1015,
+     1015
+    ],
+    [
+     1015,
+     1015,
+     1015
+    ],
+    [
+     1015,
+     1015
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.39010887772194297,
+    "deaths": 0.445,
+    "T": 128.33183999999986,
+    "timedOut": 0,
+    "dry": 0.73
+   },
+   "econ": {
+    "zeny": 158,
+    "bag": {
+     "501": 8
+    },
+    "bought": {
+     "501": 5
+    },
+    "cost": 150,
+    "income": 168,
+    "drunk": {
+     "501": 7.57
+    },
+    "after": {
+     "zeny": 176,
+     "bag": {}
+    }
+   },
+   "fights": 1557,
+   "timedOut": 0,
+   "s": 159,
+   "hard": {
+    "level": 9,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "pay_fild02",
+    "label": "斐揚森林",
+    "shape": "boss",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 261,
+    "drop": 5.385,
+    "win": 0.847,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 85,
+     "runs": 90
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1024,
+      1024
+     ],
+     [
+      1024,
+      1024
+     ],
+     [
+      1014,
+      1024
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.93,
+     "margin": 0.341976549413735,
+     "deaths": 0.35,
+     "T": 49.384399999999985,
+     "timedOut": 0,
+     "dry": 0.02
+    },
+    "econ": {
+     "income": 290,
+     "drunk": {
+      "501": 5.55
+     }
+    },
+    "fights": 1371,
+    "timedOut": 0,
+    "s": 53
+   }
+  },
+  {
+   "level": 10,
+   "phase": "普通",
+   "map": "moc_fild11",
+   "label": "蘇克拉特沙漠",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    4,
+    3
+   ],
+   "k": 1,
+   "income": 126,
+   "drop": 3.333,
+   "win": 0.987,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1009,
+     1009,
+     1009,
+     1009
+    ],
+    [
+     1009,
+     1009,
+     1009
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.985,
+    "margin": 0.4198323772629071,
+    "deaths": 0.17,
+    "T": 25.580800000000007,
+    "timedOut": 0,
+    "dry": 0.79
+   },
+   "econ": {
+    "zeny": 176,
+    "bag": {
+     "501": 5,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "645": 1
+    },
+    "cost": 170,
+    "income": 113,
+    "drunk": {
+     "501": 1.39,
+     "645": 1
+    },
+    "after": {
+     "zeny": 119,
+     "bag": {
+      "501": 4
+     }
+    }
+   },
+   "fights": 887,
+   "timedOut": 0,
+   "s": 57,
+   "hard": {
+    "level": 10,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_fild04",
+    "label": "普隆德拉原野",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     4,
+     2
+    ],
+    "filler": 2404,
+    "k": 1,
+    "income": 189,
+    "drop": 1.067,
+    "win": 0.961,
+    "planned": {
+     "N": 5,
+     "k": 1,
+     "wins": 97,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1094,
+      1094,
+      1094,
+      2404
+     ],
+     [
+      1094,
+      1094
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.975,
+     "margin": 0.361245623184087,
+     "deaths": 0.485,
+     "T": 134.06944000000001,
+     "timedOut": 0,
+     "dry": 0.9
+    },
+    "econ": {
+     "income": 241,
+     "drunk": {
+      "501": 4.21,
+      "645": 1
+     }
+    },
+    "fights": 1357,
+    "timedOut": 9,
+    "s": 156
+   }
+  },
+  {
+   "level": 11,
+   "phase": "特殊",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 4,
+   "sizes": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 170,
+   "drop": 0.517,
+   "win": 0.973,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1025,
+     1052,
+     1025
+    ],
+    [
+     1025,
+     1052,
+     1025
+    ],
+    [
+     1025,
+     1052
+    ],
+    [
+     1025,
+     1052
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.97,
+    "margin": 0.33839820561252026,
+    "deaths": 0.185,
+    "T": 87.01144000000001,
+    "timedOut": 0,
+    "dry": 0.175
+   },
+   "econ": {
+    "zeny": 119,
+    "bag": {
+     "501": 7,
+     "645": 1
+    },
+    "bought": {
+     "501": 3,
+     "645": 1
+    },
+    "cost": 110,
+    "income": 164,
+    "drunk": {
+     "501": 4.37,
+     "645": 1
+    },
+    "after": {
+     "zeny": 173,
+     "bag": {
+      "501": 3
+     }
+    }
+   },
+   "fights": 631,
+   "timedOut": 0,
+   "s": 159,
+   "hard": {
+    "level": 11,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "moc_fild11",
+    "label": "蘇克拉特沙漠",
+    "shape": "special",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     3,
+     3,
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 255,
+    "drop": 1.33,
+    "win": 0.92,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 92,
+     "runs": 94
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1001,
+      1107,
+      1001
+     ],
+     [
+      1001,
+      1107,
+      1001
+     ],
+     [
+      1001,
+      1107,
+      1001
+     ],
+     [
+      1001,
+      1107
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.995,
+     "margin": 0.3374544657312468,
+     "deaths": 0.105,
+     "T": 88.89359999999999,
+     "timedOut": 0,
+     "dry": 0.08
+    },
+    "econ": {
+     "income": 260,
+     "drunk": {
+      "501": 4.68,
+      "645": 1
+     }
+    },
+    "fights": 1589,
+    "timedOut": 0,
+    "s": 81
+   }
+  },
+  {
+   "level": 12,
+   "phase": "BOSS",
+   "map": "treasure_n2",
+   "label": "依斯魯得島 遇難船 2樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    5,
+    4,
+    3
+   ],
+   "filler": 1024,
+   "k": 1,
+   "income": 219,
+   "drop": 2.729,
+   "win": 0.945,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 95,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     2404,
+     2404,
+     2404,
+     2404,
+     1024
+    ],
+    [
+     2404,
+     2404,
+     2404,
+     2404
+    ],
+    [
+     2406,
+     2404,
+     2404
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.965,
+    "margin": 0.40423381274187015,
+    "deaths": 0.2,
+    "T": 73.12688000000001,
+    "timedOut": 0,
+    "dry": 0.23
+   },
+   "econ": {
+    "zeny": 173,
+    "bag": {
+     "501": 8,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "645": 1
+    },
+    "cost": 170,
+    "income": 237,
+    "drunk": {
+     "501": 4.82,
+     "645": 1
+    },
+    "after": {
+     "zeny": 240,
+     "bag": {
+      "501": 3
+     }
+    }
+   },
+   "fights": 1384,
+   "timedOut": 0,
+   "s": 109,
+   "hard": {
+    "level": 12,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "pay_dun00",
+    "label": "斐揚洞穴 1樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 329,
+    "drop": 0.866,
+    "win": 0.835,
+    "planned": {
+     "N": 7,
+     "k": 1,
+     "wins": 84,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1015,
+      1015,
+      1015
+     ],
+     [
+      1015,
+      1015
+     ],
+     [
+      1005,
+      1015
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.835,
+     "margin": 0.29913821983480615,
+     "deaths": 0.67,
+     "T": 70.36479999999999,
+     "timedOut": 0,
+     "dry": 0.055
+    },
+    "econ": {
+     "income": 337,
+     "drunk": {
+      "501": 5.56,
+      "645": 1
+     }
+    },
+    "fights": 1057,
+    "timedOut": 0,
+    "s": 83
+   }
+  },
+  {
+   "level": 13,
+   "phase": "普通",
+   "map": "prt_sewb3",
+   "label": "普隆德拉地下水道 3樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 4,
+   "sizes": [
+    4,
+    2
+   ],
+   "filler": 2405,
+   "k": 1,
+   "income": 156,
+   "drop": 2.986,
+   "win": 0.986,
+   "planned": {
+    "N": 5,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1051,
+     1051,
+     1051,
+     2405
+    ],
+    [
+     1051,
+     1051
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.985,
+    "margin": 0.3199862339175094,
+    "deaths": 0.09,
+    "T": 45.46615999999999,
+    "timedOut": 0,
+    "dry": 0.095
+   },
+   "econ": {
+    "zeny": 240,
+    "bag": {
+     "501": 11
+    },
+    "bought": {
+     "501": 8
+    },
+    "cost": 240,
+    "income": 149,
+    "drunk": {
+     "501": 6.32
+    },
+    "after": {
+     "zeny": 149,
+     "bag": {
+      "501": 5
+     }
+    }
+   },
+   "fights": 1127,
+   "timedOut": 0,
+   "s": 29,
+   "hard": {
+    "level": 13,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_sewb2",
+    "label": "普隆德拉地下水道 2樓",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     4,
+     3,
+     2,
+     2
+    ],
+    "filler": 1004,
+    "k": 1,
+    "income": 234,
+    "drop": 2.206,
+    "win": 0.958,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 96,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1051,
+      1048,
+      1051,
+      1004
+     ],
+     [
+      1048,
+      1051,
+      1048
+     ],
+     [
+      1051,
+      1048
+     ],
+     [
+      1048,
+      1051
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.995,
+     "margin": 0.45564329962408023,
+     "deaths": 0.02,
+     "T": 266.88399999999984,
+     "timedOut": 0,
+     "dry": 0.685
+    },
+    "econ": {
+     "income": 238,
+     "drunk": {
+      "501": 2.05
+     }
+    },
+    "fights": 1153,
+    "timedOut": 9,
+    "s": 179
+   }
+  },
+  {
+   "level": 14,
+   "phase": "特殊",
+   "map": "prt_sewb2",
+   "label": "普隆德拉地下水道 2樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 206,
+   "drop": 1.644,
+   "win": 0.971,
+   "planned": {
+    "N": 9,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1175,
+     1051,
+     1014
+    ],
+    [
+     1014,
+     1051,
+     1175
+    ],
+    [
+     1175,
+     1051
+    ],
+    [
+     1014,
+     1051
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.96,
+    "margin": 0.3283058807199372,
+    "deaths": 0.215,
+    "T": 86.41416000000002,
+    "timedOut": 0,
+    "dry": 0.315
+   },
+   "econ": {
+    "zeny": 149,
+    "bag": {
+     "501": 9,
+     "645": 1
+    },
+    "bought": {
+     "501": 4,
+     "645": 1
+    },
+    "cost": 140,
+    "income": 194,
+    "drunk": {
+     "501": 5.3,
+     "645": 1
+    },
+    "after": {
+     "zeny": 203,
+     "bag": {
+      "501": 4
+     }
+    }
+   },
+   "fights": 864,
+   "timedOut": 0,
+   "s": 66,
+   "hard": {
+    "level": 14,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     4,
+     4,
+     4,
+     3
+    ],
+    "k": 1,
+    "income": 309,
+    "drop": 0.788,
+    "win": 0.914,
+    "planned": {
+     "N": 14,
+     "k": 1,
+     "wins": 92,
+     "runs": 94
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1174,
+      1052,
+      1025,
+      1052
+     ],
+     [
+      1025,
+      1052,
+      1174,
+      1052
+     ],
+     [
+      1174,
+      1052,
+      1025,
+      1052
+     ],
+     [
+      1025,
+      1052,
+      1174
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.915,
+     "margin": 0.29354508860408074,
+     "deaths": 0.365,
+     "T": 106.04263999999998,
+     "timedOut": 0,
+     "dry": 0.24
+    },
+    "econ": {
+     "income": 301,
+     "drunk": {
+      "501": 5.26,
+      "645": 1
+     }
+    },
+    "fights": 1125,
+    "timedOut": 0,
+    "s": 153
+   }
+  },
+  {
+   "level": 15,
+   "phase": "BOSS",
+   "map": "pay_dun00",
+   "label": "斐揚洞穴 1樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    5,
+    4,
+    3
+   ],
+   "filler": 1024,
+   "k": 1,
+   "income": 262,
+   "drop": 0.399,
+   "win": 0.941,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 95,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1015,
+     1015,
+     1015,
+     1015,
+     1024
+    ],
+    [
+     1015,
+     1015,
+     1015,
+     1015
+    ],
+    [
+     1076,
+     1015,
+     1015
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.97,
+    "margin": 0.4295140790825059,
+    "deaths": 0.195,
+    "T": 90.42519999999999,
+    "timedOut": 0,
+    "dry": 0.455
+   },
+   "econ": {
+    "zeny": 203,
+    "bag": {
+     "501": 10,
+     "645": 1
+    },
+    "bought": {
+     "501": 6,
+     "645": 1
+    },
+    "cost": 200,
+    "income": 242,
+    "drunk": {
+     "501": 4.91,
+     "645": 1
+    },
+    "after": {
+     "zeny": 245,
+     "bag": {
+      "501": 5
+     }
+    }
+   },
+   "fights": 1539,
+   "timedOut": 1,
+   "s": 188,
+   "hard": {
+    "level": 15,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "prt_fild02",
+    "label": "普隆德拉原野",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 393,
+    "drop": 2.863,
+    "win": 0.823,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 83,
+     "runs": 89
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1174,
+      1174,
+      1174
+     ],
+     [
+      1174,
+      1174
+     ],
+     [
+      1031,
+      1174
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.8,
+     "margin": 0.3118013950701814,
+     "deaths": 0.675,
+     "T": 85.32647999999998,
+     "timedOut": 0,
+     "dry": 0.295
+    },
+    "econ": {
+     "income": 393,
+     "drunk": {
+      "501": 6.63,
+      "645": 1
+     }
+    },
+    "fights": 1062,
+    "timedOut": 0,
+    "s": 49
+   }
+  },
+  {
+   "level": 16,
+   "phase": "普通",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    4,
+    2
+   ],
+   "filler": 1052,
+   "k": 1,
+   "income": 184,
+   "drop": 0.867,
+   "win": 0.985,
+   "planned": {
+    "N": 5,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1103,
+     1103,
+     1103,
+     1052
+    ],
+    [
+     1103,
+     1103
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.369079487753883,
+    "deaths": 0.015,
+    "T": 34.66184,
+    "timedOut": 0,
+    "dry": 0.795
+   },
+   "econ": {
+    "zeny": 245,
+    "bag": {
+     "501": 13
+    },
+    "bought": {
+     "501": 8
+    },
+    "cost": 240,
+    "income": 207,
+    "drunk": {
+     "501": 2.36
+    },
+    "after": {
+     "zeny": 212,
+     "bag": {
+      "501": 11
+     }
+    }
+   },
+   "fights": 1059,
+   "timedOut": 0,
+   "s": 24,
+   "hard": {
+    "level": 16,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "moc_fild01",
+    "label": "蘇克拉特沙漠",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 276,
+    "drop": 6.885,
+    "win": 0.955,
+    "planned": {
+     "N": 5,
+     "k": 1,
+     "wins": 96,
+     "runs": 100
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1055,
+      1055,
+      1055
+     ],
+     [
+      1055,
+      1055
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.965,
+     "margin": 0.5268904943249703,
+     "deaths": 0.22,
+     "T": 37.31775999999999,
+     "timedOut": 0,
+     "dry": 0.925
+    },
+    "econ": {
+     "income": 335,
+     "drunk": {
+      "501": 0.87
+     }
+    },
+    "fights": 1326,
+    "timedOut": 0,
+    "s": 57
+   }
+  },
+  {
+   "level": 17,
+   "phase": "特殊",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 241,
+   "drop": 0.641,
+   "win": 0.969,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 97,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1174,
+     1103,
+     1018
+    ],
+    [
+     1018,
+     1103,
+     1174
+    ],
+    [
+     1174,
+     1103,
+     1018
+    ],
+    [
+     1018,
+     1103
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.3473376195757659,
+    "deaths": 0.135,
+    "T": 80.31512000000002,
+    "timedOut": 0,
+    "dry": 0.36
+   },
+   "econ": {
+    "zeny": 212,
+    "bag": {
+     "501": 17,
+     "645": 1
+    },
+    "bought": {
+     "501": 6,
+     "645": 1
+    },
+    "cost": 200,
+    "income": 258,
+    "drunk": {
+     "501": 6.39,
+     "645": 1
+    },
+    "after": {
+     "zeny": 270,
+     "bag": {
+      "501": 11
+     }
+    }
+   },
+   "fights": 831,
+   "timedOut": 0,
+   "s": 68,
+   "hard": {
+    "level": 17,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_sewb2",
+    "label": "普隆德拉地下水道 2樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     5,
+     5,
+     4,
+     4
+    ],
+    "k": 1,
+    "income": 362,
+    "drop": 1.908,
+    "win": 0.907,
+    "planned": {
+     "N": 18,
+     "k": 1,
+     "wins": 91,
+     "runs": 96
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1014,
+      1051,
+      1014,
+      1051,
+      1014
+     ],
+     [
+      1014,
+      1051,
+      1014,
+      1051,
+      1014
+     ],
+     [
+      1014,
+      1051,
+      1014,
+      1051
+     ],
+     [
+      1014,
+      1051,
+      1014,
+      1051
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.91,
+     "margin": 0.25275110910855414,
+     "deaths": 0.31,
+     "T": 110.49816000000001,
+     "timedOut": 0,
+     "dry": 0.095
+    },
+    "econ": {
+     "income": 410,
+     "drunk": {
+      "501": 9.12,
+      "645": 1
+     }
+    },
+    "fights": 1278,
+    "timedOut": 0,
+    "s": 138
+   }
+  },
+  {
+   "level": 18,
+   "phase": "BOSS",
+   "map": "anthell01",
+   "label": "夢羅克螞蟻地獄密穴 1樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    3,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 303,
+   "drop": 58.651,
+   "win": 0.937,
+   "planned": {
+    "N": 7,
+    "k": 1,
+    "wins": 94,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1005,
+     1005,
+     1005
+    ],
+    [
+     1005,
+     1005
+    ],
+    [
+     1095,
+     1005
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.4561662337662338,
+    "deaths": 0.18,
+    "T": 57.20680000000002,
+    "timedOut": 0,
+    "dry": 0.5
+   },
+   "econ": {
+    "zeny": 270,
+    "bag": {
+     "501": 17,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 6,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 250,
+    "income": 356,
+    "drunk": {
+     "501": 2.59,
+     "505": 1,
+     "645": 1
+    },
+    "after": {
+     "zeny": 376,
+     "bag": {
+      "501": 14
+     }
+    }
+   },
+   "fights": 737,
+   "timedOut": 0,
+   "s": 29,
+   "hard": {
+    "level": 18,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "prt_sewb2",
+    "label": "普隆德拉地下水道 2樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 455,
+    "drop": 34.667,
+    "win": 0.811,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 82,
+     "runs": 82
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1053,
+      1053,
+      1053
+     ],
+     [
+      1053,
+      1053
+     ],
+     [
+      1053,
+      1053
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.795,
+     "margin": 0.19801695951107728,
+     "deaths": 0.655,
+     "T": 107.63528000000002,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 472,
+     "drunk": {
+      "501": 12.82,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 1169,
+    "timedOut": 0,
+    "s": 89
+   }
+  },
+  {
+   "level": 19,
+   "phase": "普通",
+   "map": "prt_sewb3",
+   "label": "普隆德拉地下水道 3樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    4,
+    3
+   ],
+   "filler": 1051,
+   "k": 1,
+   "income": 211,
+   "drop": 3.939,
+   "win": 0.984,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1053,
+     1053,
+     1053,
+     1051
+    ],
+    [
+     1053,
+     1053,
+     1053
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.37758221418732774,
+    "deaths": 0,
+    "T": 48.954080000000005,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 376,
+    "bag": {
+     "501": 18,
+     "505": 4,
+     "645": 1
+    },
+    "bought": {
+     "501": 4,
+     "505": 4,
+     "645": 1
+    },
+    "cost": 340,
+    "income": 207,
+    "drunk": {
+     "501": 3.31,
+     "505": 3.99,
+     "645": 1
+    },
+    "after": {
+     "zeny": 243,
+     "bag": {
+      "501": 15
+     }
+    }
+   },
+   "fights": 1095,
+   "timedOut": 0,
+   "s": 40,
+   "hard": {
+    "level": 19,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "moc_fild01",
+    "label": "蘇克拉特沙漠",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     7,
+     5
+    ],
+    "filler": 1051,
+    "k": 1,
+    "income": 317,
+    "drop": 1.354,
+    "win": 0.952,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 96,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1055,
+      1055,
+      1055,
+      1055,
+      1055,
+      1055,
+      1051
+     ],
+     [
+      1055,
+      1055,
+      1055,
+      1055,
+      1055
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.955,
+     "margin": 0.3801925505050506,
+     "deaths": 0.29,
+     "T": 53.892480000000006,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 342,
+     "drunk": {
+      "501": 2.85,
+      "505": 3.95,
+      "645": 1
+     }
+    },
+    "fights": 2712,
+    "timedOut": 0,
+    "s": 169
+   }
+  },
+  {
+   "level": 20,
+   "phase": "特殊",
+   "map": "prt_sewb3",
+   "label": "普隆德拉地下水道 3樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    4,
+    3,
+    2,
+    2
+   ],
+   "filler": 1051,
+   "k": 1,
+   "income": 275,
+   "drop": 1.205,
+   "win": 0.967,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 97,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1077,
+     1054,
+     1077,
+     1051
+    ],
+    [
+     1077,
+     1053,
+     1077
+    ],
+    [
+     1077,
+     1054
+    ],
+    [
+     1077,
+     1053
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.995,
+    "margin": 0.25370662502669233,
+    "deaths": 0.015,
+    "T": 118.92968000000002,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 243,
+    "bag": {
+     "501": 19,
+     "505": 2,
+     "645": 1
+    },
+    "bought": {
+     "501": 4,
+     "505": 2,
+     "645": 1
+    },
+    "cost": 240,
+    "income": 277,
+    "drunk": {
+     "501": 9.3,
+     "505": 2,
+     "645": 1
+    },
+    "after": {
+     "zeny": 280,
+     "bag": {
+      "501": 10
+     }
+    }
+   },
+   "fights": 1432,
+   "timedOut": 0,
+   "s": 131,
+   "hard": {
+    "level": 20,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     3,
+     3,
+     3,
+     3
+    ],
+    "k": 1,
+    "income": 413,
+    "drop": 0.999,
+    "win": 0.901,
+    "planned": {
+     "N": 12,
+     "k": 1,
+     "wins": 91,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1056,
+      1103,
+      1060
+     ],
+     [
+      1060,
+      1103,
+      1018
+     ],
+     [
+      1018,
+      1103,
+      1056
+     ],
+     [
+      1056,
+      1103,
+      1060
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.92,
+     "margin": 0.2640082479180013,
+     "deaths": 0.41,
+     "T": 93.94872000000008,
+     "timedOut": 0,
+     "dry": 0.085
+    },
+    "econ": {
+     "income": 445,
+     "drunk": {
+      "501": 8.02,
+      "505": 2,
+      "645": 1
+     }
+    },
+    "fights": 1334,
+    "timedOut": 0,
+    "s": 136
+   }
+  },
+  {
+   "level": 21,
+   "phase": "BOSS",
+   "map": "anthell02",
+   "label": "夢羅克螞蟻地獄密穴 2樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    3,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 343,
+   "drop": 67.03,
+   "win": 0.933,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 94,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1005,
+     1005,
+     1005
+    ],
+    [
+     1005,
+     1005
+    ],
+    [
+     1176,
+     1005
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.935,
+    "margin": 0.48965669246065036,
+    "deaths": 0.165,
+    "T": 69.63968000000001,
+    "timedOut": 2,
+    "dry": 0.855
+   },
+   "econ": {
+    "zeny": 280,
+    "bag": {
+     "501": 19
+    },
+    "bought": {
+     "501": 9
+    },
+    "cost": 270,
+    "income": 454,
+    "drunk": {
+     "501": 1.81
+    },
+    "after": {
+     "zeny": 464,
+     "bag": {
+      "501": 17
+     }
+    }
+   },
+   "fights": 1023,
+   "timedOut": 3,
+   "s": 78,
+   "hard": {
+    "level": 21,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "gef_fild02",
+    "label": "吉芬原野",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 515,
+    "drop": 6.835,
+    "win": 0.799,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 80,
+     "runs": 90
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1128,
+      1128
+     ],
+     [
+      1128,
+      1128
+     ],
+     [
+      1104,
+      1128
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.9,
+     "margin": 0.25084113940729724,
+     "deaths": 0.485,
+     "T": 76.11424000000002,
+     "timedOut": 0,
+     "dry": 0.305
+    },
+    "econ": {
+     "income": 557,
+     "drunk": {
+      "501": 9.06
+     }
+    },
+    "fights": 1670,
+    "timedOut": 0,
+    "s": 102
+   }
+  },
+  {
+   "level": 22,
+   "phase": "普通",
+   "map": "gef_fild02",
+   "label": "吉芬原野",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    5,
+    4
+   ],
+   "k": 1,
+   "income": 237,
+   "drop": 1.221,
+   "win": 0.983,
+   "planned": {
+    "N": 9,
+    "k": 1,
+    "wins": 99,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1128,
+     1128,
+     1128,
+     1128,
+     1128
+    ],
+    [
+     1128,
+     1128,
+     1128,
+     1128
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.985,
+    "margin": 0.3791201779745234,
+    "deaths": 0.045,
+    "T": 49.42767999999998,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 464,
+    "bag": {
+     "501": 21,
+     "505": 6,
+     "645": 1
+    },
+    "bought": {
+     "501": 4,
+     "505": 6,
+     "645": 1
+    },
+    "cost": 440,
+    "income": 244,
+    "drunk": {
+     "501": 3.77,
+     "505": 5.87,
+     "645": 1
+    },
+    "after": {
+     "zeny": 268,
+     "bag": {
+      "501": 17
+     }
+    }
+   },
+   "fights": 830,
+   "timedOut": 0,
+   "s": 40,
+   "hard": {
+    "level": 22,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "anthell02",
+    "label": "夢羅克螞蟻地獄密穴 2樓",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     5,
+     4
+    ],
+    "k": 1,
+    "income": 356,
+    "drop": 2.148,
+    "win": 0.949,
+    "planned": {
+     "N": 9,
+     "k": 1,
+     "wins": 95,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1105,
+      1105,
+      1105,
+      1105,
+      1105
+     ],
+     [
+      1105,
+      1105,
+      1105,
+      1105
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.95,
+     "margin": 0.3646559083928089,
+     "deaths": 0.21,
+     "T": 44.803999999999995,
+     "timedOut": 0,
+     "dry": 0.01
+    },
+    "econ": {
+     "income": 395,
+     "drunk": {
+      "501": 4.37,
+      "505": 5.56,
+      "645": 1
+     }
+    },
+    "fights": 1169,
+    "timedOut": 0,
+    "s": 119
+   }
+  },
+  {
+   "level": 23,
+   "phase": "特殊",
+   "map": "pay_dun02",
+   "label": "斐揚洞穴 3樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 307,
+   "drop": 0.987,
+   "win": 0.965,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 97,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1031,
+     1028,
+     1031
+    ],
+    [
+     1031,
+     1028,
+     1031
+    ],
+    [
+     1031,
+     1028,
+     1031
+    ],
+    [
+     1031,
+     1028,
+     1031
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.2662979454167781,
+    "deaths": 0.085,
+    "T": 128.33000000000004,
+    "timedOut": 0,
+    "dry": 0.18
+   },
+   "econ": {
+    "zeny": 268,
+    "bag": {
+     "501": 22,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 220,
+    "income": 275,
+    "drunk": {
+     "501": 7.22,
+     "505": 1,
+     "645": 1
+    },
+    "after": {
+     "zeny": 323,
+     "bag": {
+      "501": 15
+     }
+    }
+   },
+   "fights": 2107,
+   "timedOut": 0,
+   "s": 213,
+   "hard": {
+    "level": 23,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_sewb2",
+    "label": "普隆德拉地下水道 2樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "k": 1,
+    "income": 461,
+    "drop": 2.006,
+    "win": 0.895,
+    "planned": {
+     "N": 23,
+     "k": 1,
+     "wins": 90,
+     "runs": 92
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1175,
+      1051,
+      1005,
+      1051,
+      1175,
+      1051
+     ],
+     [
+      1005,
+      1051,
+      1175,
+      1051,
+      1005,
+      1051
+     ],
+     [
+      1175,
+      1051,
+      1005,
+      1051,
+      1175,
+      1051
+     ],
+     [
+      1005,
+      1051,
+      1175,
+      1051,
+      1005,
+      1051
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.905,
+     "margin": 0.2071090841782695,
+     "deaths": 0.33,
+     "T": 114.29063999999995,
+     "timedOut": 0,
+     "dry": 0.07
+    },
+    "econ": {
+     "income": 376,
+     "drunk": {
+      "501": 10.45,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 1744,
+    "timedOut": 0,
+    "s": 154
+   }
+  },
+  {
+   "level": 24,
+   "phase": "BOSS",
+   "map": "xmas_dun01",
+   "label": "薑餅城玩具工廠倉庫",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    4,
+    3,
+    2
+   ],
+   "filler": 1002,
+   "k": 1,
+   "income": 381,
+   "drop": 3.486,
+   "win": 0.929,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 93,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1031,
+     1031,
+     1031,
+     1002
+    ],
+    [
+     1031,
+     1031,
+     1031
+    ],
+    [
+     1249,
+     1031
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.955,
+    "margin": 0.45292160202070464,
+    "deaths": 0.46,
+    "T": 80.37888,
+    "timedOut": 0,
+    "dry": 0.835
+   },
+   "econ": {
+    "zeny": 323,
+    "bag": {
+     "501": 23,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 8,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 310,
+    "income": 396,
+    "drunk": {
+     "501": 3.09,
+     "505": 0.99,
+     "645": 1
+    },
+    "after": {
+     "zeny": 409,
+     "bag": {
+      "501": 20
+     }
+    }
+   },
+   "fights": 1505,
+   "timedOut": 0,
+   "s": 101,
+   "hard": {
+    "level": 24,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "prt_maze03",
+    "label": "普隆德拉迷宮森林 3樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     5,
+     3,
+     3
+    ],
+    "filler": 1076,
+    "k": 1,
+    "income": 572,
+    "drop": 1.344,
+    "win": 0.786,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 79,
+     "runs": 94
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1031,
+      1031,
+      1031,
+      1031,
+      1076
+     ],
+     [
+      1031,
+      1031,
+      1031
+     ],
+     [
+      1093,
+      1031,
+      1031
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.83,
+     "margin": 0.19057884766260358,
+     "deaths": 0.585,
+     "T": 103.44624000000005,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 575,
+     "drunk": {
+      "501": 12.61,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 1834,
+    "timedOut": 0,
+    "s": 153
+   }
+  },
+  {
+   "level": 25,
+   "phase": "普通",
+   "map": "moc_fild01",
+   "label": "蘇克拉特沙漠",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    6,
+    5,
+    5,
+    4
+   ],
+   "filler": 2406,
+   "k": 1,
+   "income": 263,
+   "drop": 0.827,
+   "win": 0.982,
+   "planned": {
+    "N": 19,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1055,
+     1019,
+     1055,
+     1019,
+     1055,
+     2406
+    ],
+    [
+     1019,
+     1055,
+     1019,
+     1055,
+     1019
+    ],
+    [
+     1055,
+     1019,
+     1055,
+     1019,
+     1055
+    ],
+    [
+     1019,
+     1055,
+     1019,
+     1055
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.995,
+    "margin": 0.3303323172343312,
+    "deaths": 0.06,
+    "T": 105.21599999999998,
+    "timedOut": 0,
+    "dry": 0.01
+   },
+   "econ": {
+    "zeny": 409,
+    "bag": {
+     "501": 25,
+     "505": 4,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "505": 4,
+     "645": 1
+    },
+    "cost": 370,
+    "income": 284,
+    "drunk": {
+     "501": 5.97,
+     "505": 4,
+     "645": 1
+    },
+    "after": {
+     "zeny": 323,
+     "bag": {
+      "501": 19
+     }
+    }
+   },
+   "fights": 1602,
+   "timedOut": 0,
+   "s": 188,
+   "hard": {
+    "level": 25,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "anthell02",
+    "label": "夢羅克螞蟻地獄密穴 2樓",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     6,
+     6
+    ],
+    "k": 1,
+    "income": 395,
+    "drop": 1.787,
+    "win": 0.946,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 95,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1105,
+      1105,
+      1105,
+      1105,
+      1105,
+      1105
+     ],
+     [
+      1105,
+      1105,
+      1105,
+      1105,
+      1105,
+      1105
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.95,
+     "margin": 0.31526271738938916,
+     "deaths": 0.16,
+     "T": 54.25760000000004,
+     "timedOut": 0,
+     "dry": 0.005
+    },
+    "econ": {
+     "income": 419,
+     "drunk": {
+      "501": 6.41,
+      "505": 3.97,
+      "645": 1
+     }
+    },
+    "fights": 1268,
+    "timedOut": 0,
+    "s": 34
+   }
+  },
+  {
+   "level": 26,
+   "phase": "特殊",
+   "map": "pay_dun00",
+   "label": "斐揚洞穴 1樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    5,
+    5,
+    5,
+    4
+   ],
+   "k": 1,
+   "income": 339,
+   "drop": 0.826,
+   "win": 0.963,
+   "planned": {
+    "N": 18,
+    "k": 1,
+    "wins": 97,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1031,
+     1076,
+     1031,
+     1076,
+     1031
+    ],
+    [
+     1031,
+     1076,
+     1031,
+     1076,
+     1031
+    ],
+    [
+     1031,
+     1076,
+     1031,
+     1076,
+     1031
+    ],
+    [
+     1031,
+     1076,
+     1031,
+     1076
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.96,
+    "margin": 0.24885413392015074,
+    "deaths": 0.13,
+    "T": 135.20672000000005,
+    "timedOut": 0,
+    "dry": 0.135
+   },
+   "econ": {
+    "zeny": 323,
+    "bag": {
+     "501": 26,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 7,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 280,
+    "income": 289,
+    "drunk": {
+     "501": 6.87,
+     "505": 1,
+     "645": 1
+    },
+    "after": {
+     "zeny": 332,
+     "bag": {
+      "501": 19
+     }
+    }
+   },
+   "fights": 1343,
+   "timedOut": 0,
+   "s": 96,
+   "hard": {
+    "level": 26,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "gef_fild02",
+    "label": "吉芬原野",
+    "shape": "special",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     4,
+     4,
+     4,
+     3
+    ],
+    "k": 1,
+    "income": 509,
+    "drop": 1.412,
+    "win": 0.889,
+    "planned": {
+     "N": 14,
+     "k": 1,
+     "wins": 89,
+     "runs": 92
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1031,
+      1033,
+      1031,
+      1033
+     ],
+     [
+      1031,
+      1128,
+      1031,
+      1128
+     ],
+     [
+      1031,
+      1033,
+      1031,
+      1033
+     ],
+     [
+      1031,
+      1128,
+      1031
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.905,
+     "margin": 0.20154353976736858,
+     "deaths": 0.32,
+     "T": 149.84639999999987,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 494,
+     "drunk": {
+      "501": 13.46,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 1038,
+    "timedOut": 0,
+    "s": 82
+   }
+  },
+  {
+   "level": 27,
+   "phase": "BOSS",
+   "map": "xmas_dun02",
+   "label": "薑餅城玩具分類場",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    4,
+    3,
+    2
+   ],
+   "filler": 1128,
+   "k": 1,
+   "income": 419,
+   "drop": 3.867,
+   "win": 0.925,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 93,
+    "runs": 95
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1246,
+     1246,
+     1246,
+     1128
+    ],
+    [
+     1246,
+     1246,
+     1246
+    ],
+    [
+     1248,
+     1246
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.91,
+    "margin": 0.20574941273376254,
+    "deaths": 0.315,
+    "T": 117.52648000000006,
+    "timedOut": 0,
+    "dry": 0.01
+   },
+   "econ": {
+    "zeny": 332,
+    "bag": {
+     "501": 27,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 8,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 310,
+    "income": 437,
+    "drunk": {
+     "501": 14.14,
+     "505": 1,
+     "645": 1
+    },
+    "after": {
+     "zeny": 459,
+     "bag": {
+      "501": 13
+     }
+    }
+   },
+   "fights": 1833,
+   "timedOut": 0,
+   "s": 121,
+   "hard": {
+    "level": 27,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "pay_dun01",
+    "label": "斐揚洞穴 2樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     5,
+     3,
+     3
+    ],
+    "filler": 1095,
+    "k": 1,
+    "income": 629,
+    "drop": 1.854,
+    "win": 0.774,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 78,
+     "runs": 95
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1028,
+      1028,
+      1028,
+      1028,
+      1095
+     ],
+     [
+      1028,
+      1028,
+      1028
+     ],
+     [
+      1111,
+      1028,
+      1028
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.76,
+     "margin": 0.15601444522407631,
+     "deaths": 0.8,
+     "T": 122.56967999999998,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 732,
+     "drunk": {
+      "501": 20.13,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 2083,
+    "timedOut": 0,
+    "s": 193
+   }
+  },
+  {
+   "level": 28,
+   "phase": "普通",
+   "map": "anthell01",
+   "label": "夢羅克螞蟻地獄密穴 1樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    6,
+    5
+   ],
+   "k": 1,
+   "income": 288,
+   "drop": 1.422,
+   "win": 0.981,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 99,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1105,
+     1105,
+     1105,
+     1105,
+     1105,
+     1105
+    ],
+    [
+     1105,
+     1105,
+     1105,
+     1105,
+     1105
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.3044419578191087,
+    "deaths": 0.085,
+    "T": 49.922560000000004,
+    "timedOut": 0,
+    "dry": 0.715
+   },
+   "econ": {
+    "zeny": 459,
+    "bag": {
+     "501": 28
+    },
+    "bought": {
+     "501": 15
+    },
+    "cost": 450,
+    "income": 315,
+    "drunk": {
+     "501": 4.63
+    },
+    "after": {
+     "zeny": 324,
+     "bag": {
+      "501": 23
+     }
+    }
+   },
+   "fights": 861,
+   "timedOut": 0,
+   "s": 23,
+   "hard": {
+    "level": 28,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "anthell02",
+    "label": "夢羅克螞蟻地獄密穴 2樓",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "k": 1,
+    "income": 432,
+    "drop": 1.431,
+    "win": 0.943,
+    "planned": {
+     "N": 23,
+     "k": 1,
+     "wins": 95,
+     "runs": 100
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1105,
+      1160,
+      1097,
+      1105,
+      1160,
+      1097
+     ],
+     [
+      1160,
+      1097,
+      1105,
+      1160,
+      1097,
+      1105
+     ],
+     [
+      1097,
+      1105,
+      1160,
+      1097,
+      1105,
+      1160
+     ],
+     [
+      1105,
+      1160,
+      1097,
+      1105,
+      1160,
+      1097
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.94,
+     "margin": 0.29192768990092116,
+     "deaths": 0.21,
+     "T": 208.84360000000007,
+     "timedOut": 0,
+     "dry": 0.59
+    },
+    "econ": {
+     "income": 481,
+     "drunk": {
+      "501": 6.75
+     }
+    },
+    "fights": 1177,
+    "timedOut": 0,
+    "s": 231
+   }
+  },
+  {
+   "level": 29,
+   "phase": "特殊",
+   "map": "anthell02",
+   "label": "夢羅克螞蟻地獄密穴 2樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 370,
+   "drop": 3.628,
+   "win": 0.961,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 97,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1176,
+     1095,
+     1176
+    ],
+    [
+     1176,
+     1095,
+     1176
+    ],
+    [
+     1176,
+     1095
+    ],
+    [
+     1176,
+     1095
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.955,
+    "margin": 0.5813974353858228,
+    "deaths": 0.095,
+    "T": 94.45992000000003,
+    "timedOut": 4,
+    "dry": 0.945
+   },
+   "econ": {
+    "zeny": 324,
+    "bag": {
+     "501": 30,
+     "505": 1,
+     "645": 1
+    },
+    "bought": {
+     "501": 7,
+     "505": 1,
+     "645": 1
+    },
+    "cost": 280,
+    "income": 465,
+    "drunk": {
+     "501": 0.61,
+     "505": 1,
+     "645": 1
+    },
+    "after": {
+     "zeny": 509,
+     "bag": {
+      "501": 29
+     }
+    }
+   },
+   "fights": 718,
+   "timedOut": 6,
+   "s": 93,
+   "hard": {
+    "level": 29,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     5,
+     4,
+     3,
+     3
+    ],
+    "filler": 1103,
+    "k": 1,
+    "income": 555,
+    "drop": 1.41,
+    "win": 0.883,
+    "planned": {
+     "N": 14,
+     "k": 1,
+     "wins": 89,
+     "runs": 90
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1104,
+      1128,
+      1057,
+      1128,
+      1103
+     ],
+     [
+      1057,
+      1128,
+      1104,
+      1128
+     ],
+     [
+      1104,
+      1128,
+      1057
+     ],
+     [
+      1057,
+      1128,
+      1104
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.91,
+     "margin": 0.18360808491958974,
+     "deaths": 0.325,
+     "T": 105.23551999999994,
+     "timedOut": 0,
+     "dry": 0.045
+    },
+    "econ": {
+     "income": 525,
+     "drunk": {
+      "501": 13.14,
+      "505": 1,
+      "645": 1
+     }
+    },
+    "fights": 1421,
+    "timedOut": 0,
+    "s": 227
+   }
+  },
+  {
+   "level": 30,
+   "phase": "BOSS",
+   "map": "mjo_dun03",
+   "label": "妙勒尼廢礦 3樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    6,
+    5,
+    4
+   ],
+   "filler": 1242,
+   "k": 1,
+   "income": 456,
+   "drop": 0.653,
+   "win": 0.921,
+   "planned": {
+    "N": 14,
+    "k": 1,
+    "wins": 93,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1145,
+     1145,
+     1145,
+     1145,
+     1145,
+     1242
+    ],
+    [
+     1145,
+     1145,
+     1145,
+     1145,
+     1145
+    ],
+    [
+     1169,
+     1145,
+     1145,
+     1145
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.935,
+    "margin": 0.29327016283321283,
+    "deaths": 0.215,
+    "T": 117.61111999999996,
+    "timedOut": 0,
+    "dry": 0.005
+   },
+   "econ": {
+    "zeny": 509,
+    "bag": {
+     "501": 32,
+     "505": 7,
+     "645": 1
+    },
+    "bought": {
+     "501": 3,
+     "505": 7,
+     "645": 1
+    },
+    "cost": 460,
+    "income": 447,
+    "drunk": {
+     "501": 6.77,
+     "505": 6.97,
+     "645": 1
+    },
+    "after": {
+     "zeny": 496,
+     "bag": {
+      "501": 25
+     }
+    }
+   },
+   "fights": 1491,
+   "timedOut": 0,
+   "s": 234,
+   "hard": {
+    "level": 30,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "beach_dun3",
+    "label": "克魔島東邊洞穴馬吾",
+    "shape": "boss",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     4,
+     3,
+     2
+    ],
+    "filler": 1161,
+    "k": 1,
+    "income": 684,
+    "drop": 3.248,
+    "win": 0.762,
+    "planned": {
+     "N": 8,
+     "k": 1,
+     "wins": 77,
+     "runs": 91
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1034,
+      1034,
+      1034,
+      1161
+     ],
+     [
+      1034,
+      1034,
+      1034
+     ],
+     [
+      1064,
+      1034
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.84,
+     "margin": 0.29850814166064366,
+     "deaths": 0.86,
+     "T": 98.84848000000002,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 785,
+     "drunk": {
+      "501": 7.88,
+      "505": 6.88,
+      "645": 1
+     }
+    },
+    "fights": 1393,
+    "timedOut": 0,
+    "s": 47
+   }
+  },
+  {
+   "level": 31,
+   "phase": "普通",
+   "map": "iz_dun01",
+   "label": "依斯魯得島 海盜地洞密穴 2樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    6,
+    4
+   ],
+   "filler": 1242,
+   "k": 1,
+   "income": 312,
+   "drop": 5.696,
+   "win": 0.98,
+   "planned": {
+    "N": 9,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1161,
+     1161,
+     1161,
+     1161,
+     1161,
+     1242
+    ],
+    [
+     1161,
+     1161,
+     1161,
+     1161
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.2935479033011853,
+    "deaths": 0.03,
+    "T": 223.31327999999996,
+    "timedOut": 0,
+    "dry": 0.265
+   },
+   "econ": {
+    "zeny": 496,
+    "bag": {
+     "501": 33,
+     "505": 4,
+     "645": 1
+    },
+    "bought": {
+     "501": 8,
+     "505": 4,
+     "645": 1
+    },
+    "cost": 460,
+    "income": 310,
+    "drunk": {
+     "501": 9.74,
+     "505": 4,
+     "645": 1
+    },
+    "after": {
+     "zeny": 346,
+     "bag": {
+      "501": 23
+     }
+    }
+   },
+   "fights": 1840,
+   "timedOut": 27,
+   "s": 207,
+   "hard": {
+    "level": 31,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "treasure01",
+    "label": "艾爾貝塔沈船 1樓",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     3,
+     3,
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 468,
+    "drop": 7.093,
+    "win": 0.939,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 94,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1070,
+      1070,
+      1070
+     ],
+     [
+      1070,
+      1070,
+      1070
+     ],
+     [
+      1070,
+      1070,
+      1070
+     ],
+     [
+      1070,
+      1070
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.925,
+     "margin": 0.24054276245910697,
+     "deaths": 0.255,
+     "T": 152.39071999999993,
+     "timedOut": 0,
+     "dry": 0.015
+    },
+    "econ": {
+     "income": 461,
+     "drunk": {
+      "501": 12.18,
+      "505": 4,
+      "645": 1
+     }
+    },
+    "fights": 1035,
+    "timedOut": 0,
+    "s": 118
+   }
+  },
+  {
+   "level": 32,
+   "phase": "特殊",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    6,
+    6,
+    6,
+    6
+   ],
+   "k": 1,
+   "income": 400,
+   "drop": 0.672,
+   "win": 0.959,
+   "planned": {
+    "N": 23,
+    "k": 1,
+    "wins": 96,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1056,
+     1128,
+     1031,
+     1128,
+     1060,
+     1128
+    ],
+    [
+     1031,
+     1128,
+     1060,
+     1128,
+     1056,
+     1128
+    ],
+    [
+     1060,
+     1128,
+     1056,
+     1128,
+     1031,
+     1128
+    ],
+    [
+     1056,
+     1128,
+     1031,
+     1128,
+     1060,
+     1128
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.97,
+    "margin": 0.2435248394488924,
+    "deaths": 0.11,
+    "T": 138.18943999999993,
+    "timedOut": 0,
+    "dry": 0.485
+   },
+   "econ": {
+    "zeny": 346,
+    "bag": {
+     "501": 34
+    },
+    "bought": {
+     "501": 11
+    },
+    "cost": 330,
+    "income": 396,
+    "drunk": {
+     "501": 7.22
+    },
+    "after": {
+     "zeny": 412,
+     "bag": {
+      "501": 27
+     }
+    }
+   },
+   "fights": 1164,
+   "timedOut": 0,
+   "s": 145,
+   "hard": {
+    "level": 32,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "xmas_dun02",
+    "label": "薑餅城玩具分類場",
+    "shape": "special",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 600,
+    "drop": 8.021,
+    "win": 0.877,
+    "planned": {
+     "N": 8,
+     "k": 1,
+     "wins": 88,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1265,
+      1246
+     ],
+     [
+      1265,
+      1246
+     ],
+     [
+      1265,
+      1246
+     ],
+     [
+      1265,
+      1246
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.895,
+     "margin": 0.48565557190143444,
+     "deaths": 0.465,
+     "T": 102.71031999999997,
+     "timedOut": 1,
+     "dry": 0.85
+    },
+    "econ": {
+     "income": 883,
+     "drunk": {
+      "501": 1.45
+     }
+    },
+    "fights": 869,
+    "timedOut": 2,
+    "s": 88
+   }
+  },
+  {
+   "level": 33,
+   "phase": "BOSS",
+   "map": "gef_fild11",
+   "label": "吉芬原野",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    2,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 492,
+   "drop": 34.133,
+   "win": 0.917,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 92,
+    "runs": 94
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1123,
+     1123
+    ],
+    [
+     1123,
+     1123
+    ],
+    [
+     1125,
+     1123
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.96,
+    "margin": 0.3011223074601923,
+    "deaths": 0.14,
+    "T": 57.46328000000001,
+    "timedOut": 0,
+    "dry": 0.005
+   },
+   "econ": {
+    "zeny": 412,
+    "bag": {
+     "501": 36,
+     "505": 2,
+     "645": 1
+    },
+    "bought": {
+     "501": 9,
+     "505": 2,
+     "645": 1
+    },
+    "cost": 390,
+    "income": 593,
+    "drunk": {
+     "501": 3.1,
+     "505": 2,
+     "645": 1
+    },
+    "after": {
+     "zeny": 615,
+     "bag": {
+      "501": 33
+     }
+    }
+   },
+   "fights": 1648,
+   "timedOut": 0,
+   "s": 99,
+   "hard": {
+    "level": 33,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "cmd_fild04",
+    "label": "克魔島克克魔海邊",
+    "shape": "boss",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 738,
+    "drop": 12.324,
+    "win": 0.75,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 75,
+     "runs": 83
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1073,
+      1073
+     ],
+     [
+      1073,
+      1073
+     ],
+     [
+      1074,
+      1073
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.795,
+     "margin": 0.17040660832830415,
+     "deaths": 0.64,
+     "T": 73.43135999999998,
+     "timedOut": 0,
+     "dry": 0.01
+    },
+    "econ": {
+     "income": 783,
+     "drunk": {
+      "501": 11.82,
+      "505": 2,
+      "645": 1
+     }
+    },
+    "fights": 1442,
+    "timedOut": 0,
+    "s": 64
+   }
+  },
+  {
+   "level": 34,
+   "phase": "普通",
+   "map": "prt_sewb2",
+   "label": "普隆德拉地下水道 2樓",
+   "shape": "swarm",
+   "mob": "漂浮蟲（Plankton）",
+   "floor": 5,
+   "sizes": [
+    7,
+    5
+   ],
+   "filler": 1053,
+   "k": 1,
+   "income": 336,
+   "drop": 3.279,
+   "win": 0.979,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1161,
+     1161,
+     1161,
+     1161,
+     1161,
+     1161,
+     1053
+    ],
+    [
+     1161,
+     1161,
+     1161,
+     1161,
+     1161
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 1,
+    "margin": 0.29985431476380003,
+    "deaths": 0.005,
+    "T": 175.0307199999999,
+    "timedOut": 0,
+    "dry": 0.14
+   },
+   "econ": {
+    "zeny": 615,
+    "bag": {
+     "501": 38,
+     "505": 8,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "505": 8,
+     "645": 1
+    },
+    "cost": 570,
+    "income": 369,
+    "drunk": {
+     "501": 6.56,
+     "505": 8,
+     "645": 1
+    },
+    "after": {
+     "zeny": 414,
+     "bag": {
+      "501": 31
+     }
+    }
+   },
+   "fights": 1447,
+   "timedOut": 46,
+   "s": 141,
+   "hard": {
+    "level": 34,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "moc_fild13",
+    "label": "蘇克拉特沙漠",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     4,
+     4
+    ],
+    "k": 1,
+    "income": 504,
+    "drop": 42,
+    "win": 0.936,
+    "planned": {
+     "N": 7,
+     "k": 1,
+     "wins": 94,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1013,
+      1013,
+      1013,
+      1013
+     ],
+     [
+      1013,
+      1013,
+      1013,
+      1013
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.93,
+     "margin": 0.3390705685435463,
+     "deaths": 0.235,
+     "T": 54.20047999999996,
+     "timedOut": 0,
+     "dry": 0.005
+    },
+    "econ": {
+     "income": 574,
+     "drunk": {
+      "501": 4.82,
+      "505": 6.52,
+      "645": 1
+     }
+    },
+    "fights": 1312,
+    "timedOut": 0,
+    "s": 47
+   }
+  },
+  {
+   "level": 35,
+   "phase": "特殊",
+   "map": "prt_fild11",
+   "label": "普隆德拉原野",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "filler": 1073,
+   "k": 1,
+   "income": 430,
+   "drop": 1.338,
+   "win": 0.957,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 96,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1124,
+     1123,
+     1124,
+     1073
+    ],
+    [
+     1124,
+     1123,
+     1124
+    ],
+    [
+     1124,
+     1123,
+     1124
+    ],
+    [
+     1124,
+     1123
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.15947759839611694,
+    "deaths": 0.165,
+    "T": 142.84104000000005,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 414,
+    "bag": {
+     "501": 40,
+     "505": 2,
+     "645": 1
+    },
+    "bought": {
+     "501": 9,
+     "505": 2,
+     "645": 1
+    },
+    "cost": 390,
+    "income": 456,
+    "drunk": {
+     "501": 19.81,
+     "505": 2,
+     "645": 1
+    },
+    "after": {
+     "zeny": 480,
+     "bag": {
+      "501": 20
+     }
+    }
+   },
+   "fights": 1586,
+   "timedOut": 6,
+   "s": 108,
+   "hard": {
+    "level": 35,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "xmas_dun01",
+    "label": "薑餅城玩具工廠倉庫",
+    "shape": "special",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     3,
+     3,
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 645,
+    "drop": 5.609,
+    "win": 0.871,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 88,
+     "runs": 97
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1265,
+      1242,
+      1265
+     ],
+     [
+      1265,
+      1249,
+      1265
+     ],
+     [
+      1265,
+      1246,
+      1265
+     ],
+     [
+      1265,
+      1242
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.85,
+     "margin": 0.427134557349372,
+     "deaths": 0.54,
+     "T": 99.55744,
+     "timedOut": 4,
+     "dry": 0.48
+    },
+    "econ": {
+     "income": 759,
+     "drunk": {
+      "501": 2.16,
+      "505": 2,
+      "645": 1
+     }
+    },
+    "fights": 968,
+    "timedOut": 27,
+    "s": 74
+   }
+  },
+  {
+   "level": 36,
+   "phase": "BOSS",
+   "map": "gef_fild10",
+   "label": "獸人村",
+   "shape": "boss",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    2,
+    2,
+    2
+   ],
+   "k": 1,
+   "income": 527,
+   "drop": 2.149,
+   "win": 0.913,
+   "planned": {
+    "N": 6,
+    "k": 1,
+    "wins": 92,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1023,
+     1686
+    ],
+    [
+     1686,
+     1023
+    ],
+    [
+     1273,
+     1023
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.905,
+    "margin": 0.32648866657234554,
+    "deaths": 0.37,
+    "T": 49.48600000000004,
+    "timedOut": 0,
+    "dry": 0.775
+   },
+   "econ": {
+    "zeny": 480,
+    "bag": {
+     "501": 36
+    },
+    "bought": {
+     "501": 16
+    },
+    "cost": 480,
+    "income": 548,
+    "drunk": {
+     "501": 4.29
+    },
+    "after": {
+     "zeny": 548,
+     "bag": {
+      "501": 32
+     }
+    }
+   },
+   "fights": 639,
+   "timedOut": 0,
+   "s": 20,
+   "hard": {
+    "level": 36,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "gl_cas01",
+    "label": "克雷斯特漢姆古城 1樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     3,
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 791,
+    "drop": 2.129,
+    "win": 0.738,
+    "planned": {
+     "N": 8,
+     "k": 1,
+     "wins": 74,
+     "runs": 82
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1179,
+      1179,
+      1179
+     ],
+     [
+      1179,
+      1179,
+      1179
+     ],
+     [
+      1179,
+      1179
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.925,
+     "margin": 0.2559011638730238,
+     "deaths": 0.26,
+     "T": 219.14848000000012,
+     "timedOut": 0,
+     "dry": 0.51
+    },
+    "econ": {
+     "income": 996,
+     "drunk": {
+      "501": 9.84
+     }
+    },
+    "fights": 1526,
+    "timedOut": 0,
+    "s": 179
+   }
+  },
+  {
+   "level": 37,
+   "phase": "普通",
+   "map": "iz_dun02",
+   "label": "依斯魯得島 海盜地洞密穴 3樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    4,
+    3
+   ],
+   "k": 1,
+   "income": 359,
+   "drop": 1.373,
+   "win": 0.978,
+   "planned": {
+    "N": 7,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1067,
+     1067,
+     1067,
+     1067
+    ],
+    [
+     1067,
+     1067,
+     1067
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.975,
+    "margin": 0.3350664646325506,
+    "deaths": 0.09,
+    "T": 81.04208000000004,
+    "timedOut": 0,
+    "dry": 0.095
+   },
+   "econ": {
+    "zeny": 548,
+    "bag": {
+     "501": 43,
+     "505": 3,
+     "645": 1
+    },
+    "bought": {
+     "501": 11,
+     "505": 3,
+     "645": 1
+    },
+    "cost": 500,
+    "income": 414,
+    "drunk": {
+     "501": 3.3,
+     "505": 3,
+     "645": 1
+    },
+    "after": {
+     "zeny": 462,
+     "bag": {
+      "501": 40
+     }
+    }
+   },
+   "fights": 939,
+   "timedOut": 1,
+   "s": 68,
+   "hard": {
+    "level": 37,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "cmd_fild02",
+    "label": "克魔島克克魔海邊",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     6,
+     5
+    ],
+    "k": 1,
+    "income": 539,
+    "drop": 2.754,
+    "win": 0.933,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 94,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1073,
+      1073,
+      1073,
+      1073,
+      1073,
+      1073
+     ],
+     [
+      1073,
+      1073,
+      1073,
+      1073,
+      1073
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.98,
+     "margin": 0.22294028514360476,
+     "deaths": 0.07,
+     "T": 69.75023999999999,
+     "timedOut": 0,
+     "dry": 0.025
+    },
+    "econ": {
+     "income": 604,
+     "drunk": {
+      "501": 9.86,
+      "505": 3,
+      "645": 1
+     }
+    },
+    "fights": 1888,
+    "timedOut": 0,
+    "s": 208
+   }
+  },
+  {
+   "level": 38,
+   "phase": "特殊",
+   "map": "cmd_fild02",
+   "label": "克魔島克克魔海邊",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 459,
+   "drop": 0.511,
+   "win": 0.955,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 96,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1391,
+     1073,
+     1391
+    ],
+    [
+     1391,
+     1317,
+     1391
+    ],
+    [
+     1391,
+     1073,
+     1391
+    ],
+    [
+     1391,
+     1317
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.96,
+    "margin": 0.4548288933068255,
+    "deaths": 0.265,
+    "T": 68.32591999999998,
+    "timedOut": 0,
+    "dry": 0.735
+   },
+   "econ": {
+    "zeny": 462,
+    "bag": {
+     "501": 45,
+     "505": 5,
+     "645": 1
+    },
+    "bought": {
+     "501": 5,
+     "505": 5,
+     "645": 1
+    },
+    "cost": 420,
+    "income": 414,
+    "drunk": {
+     "501": 1.83,
+     "505": 4.86,
+     "645": 1
+    },
+    "after": {
+     "zeny": 456,
+     "bag": {
+      "501": 43
+     }
+    }
+   },
+   "fights": 794,
+   "timedOut": 0,
+   "s": 132,
+   "hard": {
+    "level": 38,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     4,
+     2,
+     2,
+     2
+    ],
+    "filler": 1128,
+    "k": 1,
+    "income": 689,
+    "drop": 2.456,
+    "win": 0.865,
+    "planned": {
+     "N": 9,
+     "k": 1,
+     "wins": 87,
+     "runs": 88
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1042,
+      1013,
+      1100,
+      1128
+     ],
+     [
+      1100,
+      1013
+     ],
+     [
+      1214,
+      1013
+     ],
+     [
+      1042,
+      1013
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.995,
+     "margin": 0.3718466534128562,
+     "deaths": 0.015,
+     "T": 66.51903999999999,
+     "timedOut": 0,
+     "dry": 0.085
+    },
+    "econ": {
+     "income": 701,
+     "drunk": {
+      "501": 2.02,
+      "505": 4.95,
+      "645": 1
+     }
+    },
+    "fights": 1380,
+    "timedOut": 0,
+    "s": 132
+   }
+  },
+  {
+   "level": 39,
+   "phase": "BOSS",
+   "map": "orcsdun02",
+   "label": "吉芬獸人地下洞穴 2樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    4,
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 562,
+   "drop": 1.846,
+   "win": 0.908,
+   "planned": {
+    "N": 9,
+    "k": 1,
+    "wins": 91,
+    "runs": 91
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1111,
+     1111,
+     1111,
+     1111
+    ],
+    [
+     1111,
+     1111,
+     1111
+    ],
+    [
+     1177,
+     1111,
+     1111
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.2880015246719645,
+    "deaths": 0.21,
+    "T": 80.91736,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 456,
+    "bag": {
+     "501": 47,
+     "505": 6,
+     "645": 1
+    },
+    "bought": {
+     "501": 4,
+     "505": 6,
+     "645": 1
+    },
+    "cost": 440,
+    "income": 584,
+    "drunk": {
+     "501": 4.54,
+     "505": 5.99,
+     "645": 1
+    },
+    "after": {
+     "zeny": 600,
+     "bag": {
+      "501": 42
+     }
+    }
+   },
+   "fights": 2555,
+   "timedOut": 0,
+   "s": 213,
+   "hard": {
+    "level": 39,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "pay_dun02",
+    "label": "斐揚洞穴 3樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     5,
+     4,
+     4
+    ],
+    "filler": 1028,
+    "k": 1,
+    "income": 843,
+    "drop": 2.278,
+    "win": 0.725,
+    "planned": {
+     "N": 12,
+     "k": 1,
+     "wins": 73,
+     "runs": 88
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1016,
+      1016,
+      1016,
+      1016,
+      1028
+     ],
+     [
+      1016,
+      1016,
+      1016,
+      1016
+     ],
+     [
+      1188,
+      1016,
+      1016,
+      1016
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.735,
+     "margin": 0.1977240035729686,
+     "deaths": 0.895,
+     "T": 118.08136000000005,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 976,
+     "drunk": {
+      "501": 10.48,
+      "505": 5.99,
+      "645": 1
+     }
+    },
+    "fights": 1823,
+    "timedOut": 0,
+    "s": 120
+   }
+  },
+  {
+   "level": 40,
+   "phase": "普通",
+   "map": "orcsdun01",
+   "label": "吉芬獸人地下洞穴 1樓",
+   "shape": "swarm",
+   "mob": "邪骸獸人（Orc Skeleton）",
+   "floor": 3,
+   "sizes": [
+    5,
+    4
+   ],
+   "k": 1,
+   "income": 383,
+   "drop": 0.821,
+   "win": 0.977,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1152,
+     1152,
+     1152,
+     1152,
+     1152
+    ],
+    [
+     1152,
+     1152,
+     1152,
+     1152
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.97,
+    "margin": 0.3615678439268934,
+    "deaths": 0.135,
+    "T": 62.26599999999995,
+    "timedOut": 0,
+    "dry": 0.035
+   },
+   "econ": {
+    "zeny": 600,
+    "bag": {
+     "501": 48,
+     "505": 7,
+     "656": 1
+    },
+    "bought": {
+     "501": 6,
+     "505": 7,
+     "656": 1
+    },
+    "cost": 590,
+    "income": 456,
+    "drunk": {
+     "501": 4.68,
+     "505": 6.46,
+     "656": 1
+    },
+    "after": {
+     "zeny": 466,
+     "bag": {
+      "501": 43,
+      "505": 1
+     }
+    }
+   },
+   "fights": 1580,
+   "timedOut": 0,
+   "s": 47,
+   "hard": {
+    "level": 40,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "cmd_fild07",
+    "label": "發樂斯 燈塔島",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     4,
+     3,
+     3,
+     3
+    ],
+    "k": 1,
+    "income": 575,
+    "drop": 1.426,
+    "win": 0.93,
+    "planned": {
+     "N": 13,
+     "k": 1,
+     "wins": 93,
+     "runs": 94
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1254,
+      1266,
+      1074,
+      1254
+     ],
+     [
+      1266,
+      1074,
+      1254
+     ],
+     [
+      1074,
+      1254,
+      1266
+     ],
+     [
+      1254,
+      1266,
+      1074
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.965,
+     "margin": 0.2778769074050975,
+     "deaths": 0.11,
+     "T": 88.01831999999999,
+     "timedOut": 0,
+     "dry": 0.005
+    },
+    "econ": {
+     "income": 590,
+     "drunk": {
+      "501": 5.38,
+      "505": 6.99,
+      "656": 1
+     }
+    },
+    "fights": 1870,
+    "timedOut": 0,
+    "s": 132
+   }
+  },
+  {
+   "level": 41,
+   "phase": "特殊",
+   "map": "mjo_dun03",
+   "label": "妙勒尼廢礦 3樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "filler": 1023,
+   "k": 1,
+   "income": 488,
+   "drop": 2.283,
+   "win": 0.953,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 96,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1151,
+     1169,
+     1151,
+     1023
+    ],
+    [
+     1151,
+     1169,
+     1151
+    ],
+    [
+     1151,
+     1169,
+     1151
+    ],
+    [
+     1151,
+     1169
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.39741811776771996,
+    "deaths": 0.195,
+    "T": 78.89944,
+    "timedOut": 0,
+    "dry": 0.74
+   },
+   "econ": {
+    "zeny": 466,
+    "bag": {
+     "501": 50,
+     "505": 4,
+     "656": 1
+    },
+    "bought": {
+     "501": 7,
+     "505": 3,
+     "656": 1
+    },
+    "cost": 420,
+    "income": 537,
+    "drunk": {
+     "501": 2.01,
+     "505": 4,
+     "656": 1
+    },
+    "after": {
+     "zeny": 583,
+     "bag": {
+      "501": 48
+     }
+    }
+   },
+   "fights": 2662,
+   "timedOut": 0,
+   "s": 462,
+   "hard": {
+    "level": 41,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "iz_dun02",
+    "label": "依斯魯得島 海盜地洞密穴 3樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     5,
+     4,
+     4,
+     3
+    ],
+    "filler": 1179,
+    "k": 1,
+    "income": 732,
+    "drop": 0.867,
+    "win": 0.859,
+    "planned": {
+     "N": 15,
+     "k": 1,
+     "wins": 86,
+     "runs": 89
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1144,
+      1067,
+      1144,
+      1067,
+      1179
+     ],
+     [
+      1144,
+      1067,
+      1144,
+      1067
+     ],
+     [
+      1144,
+      1067,
+      1144,
+      1067
+     ],
+     [
+      1144,
+      1067,
+      1144
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.86,
+     "margin": 0.17281456935185383,
+     "deaths": 0.5,
+     "T": 159.80631999999986,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 834,
+     "drunk": {
+      "501": 14.22,
+      "505": 4,
+      "656": 1
+     }
+    },
+    "fights": 1918,
+    "timedOut": 5,
+    "s": 508
+   }
+  },
+  {
+   "level": 42,
+   "phase": "BOSS",
+   "map": "iz_dun03",
+   "label": "依斯魯得島 海盜地洞密穴 4樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    5,
+    3,
+    3
+   ],
+   "filler": 1266,
+   "k": 1,
+   "income": 597,
+   "drop": 1.284,
+   "win": 0.904,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 91,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1158,
+     1158,
+     1158,
+     1158,
+     1266
+    ],
+    [
+     1158,
+     1158,
+     1158
+    ],
+    [
+     1264,
+     1158,
+     1158
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.89,
+    "margin": 0.2918383598236942,
+    "deaths": 0.47,
+    "T": 91.43567999999999,
+    "timedOut": 0,
+    "dry": 0.02
+   },
+   "econ": {
+    "zeny": 583,
+    "bag": {
+     "501": 52,
+     "505": 8,
+     "656": 1
+    },
+    "bought": {
+     "501": 4,
+     "505": 8,
+     "656": 1
+    },
+    "cost": 580,
+    "income": 671,
+    "drunk": {
+     "501": 5.35,
+     "505": 7.85,
+     "656": 1
+    },
+    "after": {
+     "zeny": 674,
+     "bag": {
+      "501": 47
+     }
+    }
+   },
+   "fights": 1892,
+   "timedOut": 0,
+   "s": 262,
+   "hard": {
+    "level": 42,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "moc_pryd05",
+    "label": "夢羅克金字塔 地下1樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     6,
+     5,
+     5
+    ],
+    "k": 1,
+    "income": 896,
+    "drop": 0.567,
+    "win": 0.713,
+    "planned": {
+     "N": 16,
+     "k": 1,
+     "wins": 72,
+     "runs": 100
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1032,
+      1032,
+      1032,
+      1032,
+      1032,
+      1032
+     ],
+     [
+      1032,
+      1032,
+      1032,
+      1032,
+      1032
+     ],
+     [
+      1149,
+      1032,
+      1032,
+      1032,
+      1032
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.71,
+     "margin": 0.1797203686389742,
+     "deaths": 0.935,
+     "T": 98.98591999999996,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 611,
+     "drunk": {
+      "501": 12.34,
+      "505": 7.99,
+      "656": 1
+     }
+    },
+    "fights": 1554,
+    "timedOut": 0,
+    "s": 528
+   }
+  },
+  {
+   "level": 43,
+   "phase": "普通",
+   "map": "treasure01",
+   "label": "艾爾貝塔沈船 1樓",
+   "shape": "swarm",
+   "mob": "邪骸海盜（Pirate Skeleton）",
+   "floor": 3,
+   "sizes": [
+    6,
+    6
+   ],
+   "k": 1,
+   "income": 405,
+   "drop": 1.859,
+   "win": 0.976,
+   "planned": {
+    "N": 11,
+    "k": 1,
+    "wins": 98,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1071,
+     1071,
+     1071,
+     1071,
+     1071,
+     1071
+    ],
+    [
+     1071,
+     1071,
+     1071,
+     1071,
+     1071,
+     1071
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.975,
+    "margin": 0.338351746853903,
+    "deaths": 0.285,
+    "T": 47.961439999999975,
+    "timedOut": 0,
+    "dry": 0.025
+   },
+   "econ": {
+    "zeny": 674,
+    "bag": {
+     "501": 54,
+     "505": 8,
+     "656": 1
+    },
+    "bought": {
+     "501": 7,
+     "505": 8,
+     "656": 1
+    },
+    "cost": 670,
+    "income": 510,
+    "drunk": {
+     "501": 4.94,
+     "505": 7.02,
+     "656": 1
+    },
+    "after": {
+     "zeny": 514,
+     "bag": {
+      "501": 49,
+      "505": 1
+     }
+    }
+   },
+   "fights": 1302,
+   "timedOut": 0,
+   "s": 309,
+   "hard": {
+    "level": 43,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_fild11",
+    "label": "普隆德拉原野",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     5,
+     4
+    ],
+    "k": 1,
+    "income": 608,
+    "drop": 12.489,
+    "win": 0.927,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 93,
+     "runs": 98
+    },
+    "down": 1,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1122,
+      1122,
+      1122,
+      1122,
+      1122
+     ],
+     [
+      1122,
+      1122,
+      1122,
+      1122
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.945,
+     "margin": 0.32839567278076004,
+     "deaths": 0.225,
+     "T": 43.47792000000002,
+     "timedOut": 0,
+     "dry": 0.01
+    },
+    "econ": {
+     "income": 690,
+     "drunk": {
+      "501": 5.79,
+      "505": 7.09,
+      "656": 1
+     }
+    },
+    "fights": 4936,
+    "timedOut": 0,
+    "s": 811
+   }
+  },
+  {
+   "level": 44,
+   "phase": "特殊",
+   "map": "prt_fild11",
+   "label": "普隆德拉原野",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "k": 1,
+   "income": 516,
+   "drop": 0.783,
+   "win": 0.951,
+   "planned": {
+    "N": 14,
+    "k": 1,
+    "wins": 96,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1392,
+     1122,
+     1392,
+     1122
+    ],
+    [
+     1392,
+     1125,
+     1392,
+     1125
+    ],
+    [
+     1392,
+     1122,
+     1392,
+     1122
+    ],
+    [
+     1392,
+     1125,
+     1392
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.945,
+    "margin": 0.2769138091724592,
+    "deaths": 0.19,
+    "T": 123.22704000000007,
+    "timedOut": 0,
+    "dry": 0.385
+   },
+   "econ": {
+    "zeny": 514,
+    "bag": {
+     "501": 56,
+     "505": 5,
+     "656": 1
+    },
+    "bought": {
+     "501": 7,
+     "505": 4,
+     "656": 1
+    },
+    "cost": 470,
+    "income": 593,
+    "drunk": {
+     "501": 5.58,
+     "505": 5,
+     "656": 1
+    },
+    "after": {
+     "zeny": 637,
+     "bag": {
+      "501": 50
+     }
+    }
+   },
+   "fights": 1592,
+   "timedOut": 0,
+   "s": 444,
+   "hard": {
+    "level": 44,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "cmd_fild04",
+    "label": "克魔島克克魔海邊",
+    "shape": "special",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     7,
+     6,
+     6,
+     5
+    ],
+    "filler": 1141,
+    "k": 1,
+    "income": 774,
+    "drop": 0.352,
+    "win": 0.853,
+    "planned": {
+     "N": 23,
+     "k": 1,
+     "wins": 86,
+     "runs": 92
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1391,
+      1073,
+      1391,
+      1073,
+      1391,
+      1073,
+      1141
+     ],
+     [
+      1391,
+      1323,
+      1391,
+      1323,
+      1391,
+      1323
+     ],
+     [
+      1391,
+      1073,
+      1391,
+      1073,
+      1391,
+      1073
+     ],
+     [
+      1391,
+      1323,
+      1391,
+      1323,
+      1391
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.925,
+     "margin": 0.15073142790571242,
+     "deaths": 0.24,
+     "T": 124.08216000000004,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 701,
+     "drunk": {
+      "501": 22.63,
+      "505": 5,
+      "656": 1
+     }
+    },
+    "fights": 1555,
+    "timedOut": 0,
+    "s": 215
+   }
+  },
+  {
+   "level": 45,
+   "phase": "BOSS",
+   "map": "moc_pryd04",
+   "label": "夢羅克金字塔 4樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    5,
+    5,
+    5
+   ],
+   "k": 1,
+   "income": 631,
+   "drop": 0.47,
+   "win": 0.9,
+   "planned": {
+    "N": 14,
+    "k": 1,
+    "wins": 90,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1041,
+     1041,
+     1041,
+     1041,
+     1041
+    ],
+    [
+     1041,
+     1041,
+     1041,
+     1041,
+     1041
+    ],
+    [
+     1029,
+     1041,
+     1041,
+     1041,
+     1041
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.895,
+    "margin": 0.15444726266552478,
+    "deaths": 0.335,
+    "T": 84.81952000000001,
+    "timedOut": 0,
+    "dry": 0
+   },
+   "econ": {
+    "zeny": 637,
+    "bag": {
+     "501": 58,
+     "505": 6,
+     "656": 1
+    },
+    "bought": {
+     "501": 8,
+     "505": 6,
+     "656": 1
+    },
+    "cost": 600,
+    "income": 634,
+    "drunk": {
+     "501": 18.21,
+     "505": 6,
+     "656": 1
+    },
+    "after": {
+     "zeny": 671,
+     "bag": {
+      "501": 40
+     }
+    }
+   },
+   "fights": 1355,
+   "timedOut": 2,
+   "s": 117,
+   "hard": {
+    "level": 45,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "moc_fild13",
+    "label": "蘇克拉特沙漠",
+    "shape": "boss",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     5,
+     4,
+     4
+    ],
+    "k": 1,
+    "income": 947,
+    "drop": 12.567,
+    "win": 0.701,
+    "planned": {
+     "N": 13,
+     "k": 1,
+     "wins": 71,
+     "runs": 89
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1058,
+      1138,
+      1058,
+      1138,
+      1058
+     ],
+     [
+      1138,
+      1058,
+      1138,
+      1058
+     ],
+     [
+      1058,
+      1058,
+      1138,
+      1058
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.78,
+     "margin": 0.13418930646015023,
+     "deaths": 0.69,
+     "T": 93.37816000000007,
+     "timedOut": 0,
+     "dry": 0
+    },
+    "econ": {
+     "income": 841,
+     "drunk": {
+      "501": 22.64,
+      "505": 6,
+      "656": 1
+     }
+    },
+    "fights": 1845,
+    "timedOut": 2,
+    "s": 488
+   }
+  },
+  {
+   "level": 46,
+   "phase": "普通",
+   "map": "gef_fild11",
+   "label": "吉芬原野",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    5,
+    5,
+    4,
+    4
+   ],
+   "k": 1,
+   "income": 428,
+   "drop": 0.861,
+   "win": 0.975,
+   "planned": {
+    "N": 19,
+    "k": 1,
+    "wins": 98,
+    "runs": 100
+   },
+   "down": 1,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1123,
+     1123,
+     1123,
+     1123,
+     1123
+    ],
+    [
+     1123,
+     1123,
+     1123,
+     1123,
+     1123
+    ],
+    [
+     1123,
+     1123,
+     1123,
+     1123
+    ],
+    [
+     1123,
+     1123,
+     1123,
+     1123
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.995,
+    "margin": 0.13565175455517944,
+    "deaths": 0.035,
+    "T": 120.06504000000004,
+    "timedOut": 0,
+    "dry": 0.005
+   },
+   "econ": {
+    "zeny": 671,
+    "bag": {
+     "501": 60,
+     "656": 1
+    },
+    "bought": {
+     "501": 20,
+     "656": 1
+    },
+    "cost": 660,
+    "income": 450,
+    "drunk": {
+     "501": 25.73,
+     "656": 1
+    },
+    "after": {
+     "zeny": 461,
+     "bag": {
+      "501": 34
+     }
+    }
+   },
+   "fights": 1016,
+   "timedOut": 0,
+   "s": 355,
+   "hard": {
+    "level": 46,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "pay_fild10",
+    "label": "斐揚森林",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     5,
+     4
+    ],
+    "k": 1,
+    "income": 642,
+    "drop": 1.212,
+    "win": 0.924,
+    "planned": {
+     "N": 9,
+     "k": 1,
+     "wins": 93,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1494,
+      1494,
+      1494,
+      1494,
+      1494
+     ],
+     [
+      1494,
+      1494,
+      1494,
+      1494
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.935,
+     "margin": 0.14674604983953846,
+     "deaths": 0.25,
+     "T": 52.75944,
+     "timedOut": 0,
+     "dry": 0.365
+    },
+    "econ": {
+     "income": 727,
+     "drunk": {
+      "501": 20.76,
+      "656": 1
+     }
+    },
+    "fights": 1478,
+    "timedOut": 0,
+    "s": 298
+   }
+  },
+  {
+   "level": 47,
+   "phase": "特殊",
+   "map": "prt_fild11",
+   "label": "普隆德拉原野",
+   "shape": "special",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 544,
+   "drop": 1.266,
+   "win": 0.949,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 95,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1258,
+     1308,
+     1258
+    ],
+    [
+     1258,
+     1126,
+     1258
+    ],
+    [
+     1258,
+     1308,
+     1258
+    ],
+    [
+     1258,
+     1126
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.94,
+    "margin": 0.3819222911233854,
+    "deaths": 0.21,
+    "T": 90.53335999999999,
+    "timedOut": 0,
+    "dry": 0.895
+   },
+   "econ": {
+    "zeny": 461,
+    "bag": {
+     "501": 49
+    },
+    "bought": {
+     "501": 15
+    },
+    "cost": 450,
+    "income": 602,
+    "drunk": {
+     "501": 2.3
+    },
+    "after": {
+     "zeny": 613,
+     "bag": {
+      "501": 47
+     }
+    }
+   },
+   "fights": 1861,
+   "timedOut": 0,
+   "s": 444,
+   "hard": {
+    "level": 47,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "iz_dun03",
+    "label": "依斯魯得島 海盜地洞密穴 4樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     4,
+     3,
+     2,
+     2
+    ],
+    "filler": 1125,
+    "k": 1,
+    "income": 816,
+    "drop": 1.059,
+    "win": 0.846,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 85,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1045,
+      1069,
+      1045,
+      1125
+     ],
+     [
+      1045,
+      1158,
+      1045
+     ],
+     [
+      1045,
+      1069
+     ],
+     [
+      1045,
+      1158
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.85,
+     "margin": 0.15897589371881474,
+     "deaths": 0.53,
+     "T": 133.64007999999984,
+     "timedOut": 0,
+     "dry": 0.385
+    },
+    "econ": {
+     "income": 885,
+     "drunk": {
+      "501": 14.46
+     }
+    },
+    "fights": 1930,
+    "timedOut": 0,
+    "s": 356
+   }
+  },
+  {
+   "level": 48,
+   "phase": "BOSS",
+   "map": "cmd_fild01",
+   "label": "克魔島巴不其卡森林",
+   "shape": "boss",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    4,
+    4,
+    3
+   ],
+   "k": 1,
+   "income": 664,
+   "drop": 10.928,
+   "win": 0.896,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 90,
+    "runs": 91
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1687,
+     1687,
+     1687,
+     1687
+    ],
+    [
+     1687,
+     1687,
+     1687,
+     1687
+    ],
+    [
+     1118,
+     1687,
+     1687
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.91,
+    "margin": 0.12333732388614772,
+    "deaths": 0.355,
+    "T": 71.32583999999999,
+    "timedOut": 1,
+    "dry": 0.25
+   },
+   "econ": {
+    "zeny": 613,
+    "bag": {
+     "501": 64,
+     "656": 1
+    },
+    "bought": {
+     "501": 17,
+     "656": 1
+    },
+    "cost": 570,
+    "income": 628,
+    "drunk": {
+     "501": 30.14,
+     "656": 1
+    },
+    "after": {
+     "zeny": 671,
+     "bag": {
+      "501": 34
+     }
+    }
+   },
+   "fights": 1015,
+   "timedOut": 7,
+   "s": 56,
+   "hard": {
+    "level": 48,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "gl_cas02",
+    "label": "克雷斯特漢姆古城 2樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 996,
+    "drop": 3.397,
+    "win": 0.689,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 69,
+     "runs": 70
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1191,
+      1191,
+      1191
+     ],
+     [
+      1191,
+      1191
+     ],
+     [
+      1191,
+      1191
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.685,
+     "margin": 0.08969015116957728,
+     "deaths": 0.995,
+     "T": 77.86983999999997,
+     "timedOut": 0,
+     "dry": 0.06
+    },
+    "econ": {
+     "income": 1102,
+     "drunk": {
+      "501": 38.45,
+      "656": 1
+     }
+    },
+    "fights": 883,
+    "timedOut": 6,
+    "s": 126
+   }
+  },
+  {
+   "level": 49,
+   "phase": "普通",
+   "map": "prt_maze01",
+   "label": "普隆德拉迷宮森林 1樓",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 1,
+   "sizes": [
+    6,
+    6,
+    5,
+    5
+   ],
+   "k": 1,
+   "income": 450,
+   "drop": 1.194,
+   "win": 0.974,
+   "planned": {
+    "N": 22,
+    "k": 1,
+    "wins": 98,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1013,
+     1013,
+     1013,
+     1013,
+     1013,
+     1013
+    ],
+    [
+     1013,
+     1013,
+     1013,
+     1013,
+     1013,
+     1013
+    ],
+    [
+     1013,
+     1013,
+     1013,
+     1013,
+     1013
+    ],
+    [
+     1013,
+     1013,
+     1013,
+     1013,
+     1013
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.2201126363691157,
+    "deaths": 0.07,
+    "T": 101.32703999999998,
+    "timedOut": 0,
+    "dry": 0.635
+   },
+   "econ": {
+    "zeny": 671,
+    "bag": {
+     "501": 56
+    },
+    "bought": {
+     "501": 22
+    },
+    "cost": 660,
+    "income": 457,
+    "drunk": {
+     "501": 10.51
+    },
+    "after": {
+     "zeny": 468,
+     "bag": {
+      "501": 45
+     }
+    }
+   },
+   "fights": 828,
+   "timedOut": 0,
+   "s": 181,
+   "hard": {
+    "level": 49,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "cmd_fild03",
+    "label": "克魔島基乃依沼澤地",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     5,
+     3
+    ],
+    "filler": 1126,
+    "k": 1,
+    "income": 675,
+    "drop": 1.317,
+    "win": 0.921,
+    "planned": {
+     "N": 7,
+     "k": 1,
+     "wins": 93,
+     "runs": 96
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1271,
+      1271,
+      1271,
+      1271,
+      1126
+     ],
+     [
+      1271,
+      1271,
+      1271
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.945,
+     "margin": 0.144519506057501,
+     "deaths": 0.285,
+     "T": 77.21951999999996,
+     "timedOut": 0,
+     "dry": 0.31
+    },
+    "econ": {
+     "income": 698,
+     "drunk": {
+      "501": 23.89
+     }
+    },
+    "fights": 1058,
+    "timedOut": 0,
+    "s": 86
+   }
+  },
+  {
+   "level": 50,
+   "phase": "特殊",
+   "map": "orcsdun02",
+   "label": "吉芬獸人地下洞穴 2樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 4,
+   "sizes": [
+    7,
+    6,
+    6,
+    5
+   ],
+   "filler": 1067,
+   "k": 1,
+   "income": 572,
+   "drop": 0.685,
+   "win": 0.947,
+   "planned": {
+    "N": 23,
+    "k": 1,
+    "wins": 95,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1111,
+     1152,
+     1042,
+     1152,
+     1111,
+     1152,
+     1067
+    ],
+    [
+     1042,
+     1152,
+     1111,
+     1152,
+     1042,
+     1152
+    ],
+    [
+     1111,
+     1152,
+     1042,
+     1152,
+     1111,
+     1152
+    ],
+    [
+     1042,
+     1152,
+     1111,
+     1152,
+     1042
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.945,
+    "margin": 0.14173735376024316,
+    "deaths": 0.18,
+    "T": 129.58247999999995,
+    "timedOut": 0,
+    "dry": 0.31
+   },
+   "econ": {
+    "zeny": 468,
+    "bag": {
+     "501": 60
+    },
+    "bought": {
+     "501": 15
+    },
+    "cost": 450,
+    "income": 462,
+    "drunk": {
+     "501": 19.35
+    },
+    "after": {
+     "zeny": 480,
+     "bag": {
+      "501": 41
+     }
+    }
+   },
+   "fights": 1334,
+   "timedOut": 0,
+   "s": 223,
+   "hard": {
+    "level": 50,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "moc_fild17",
+    "label": "蘇克拉特沙漠",
+    "shape": "special",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     4,
+     4,
+     3,
+     3
+    ],
+    "k": 1,
+    "income": 858,
+    "drop": 1.223,
+    "win": 0.84,
+    "planned": {
+     "N": 14,
+     "k": 1,
+     "wins": 84,
+     "runs": 92
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1165,
+      1119,
+      1165,
+      1119
+     ],
+     [
+      1165,
+      1119,
+      1165,
+      1119
+     ],
+     [
+      1165,
+      1119,
+      1165
+     ],
+     [
+      1165,
+      1119,
+      1165
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.925,
+     "margin": 0.12437159622194269,
+     "deaths": 0.225,
+     "T": 133.54688,
+     "timedOut": 0,
+     "dry": 0.07
+    },
+    "econ": {
+     "income": 860,
+     "drunk": {
+      "501": 30.17
+     }
+    },
+    "fights": 1528,
+    "timedOut": 0,
+    "s": 140
+   }
+  },
+  {
+   "level": 51,
+   "phase": "BOSS",
+   "map": "pay_dun02",
+   "label": "斐揚洞穴 3樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    7,
+    6,
+    5
+   ],
+   "filler": 1028,
+   "k": 1,
+   "income": 697,
+   "drop": 0.691,
+   "win": 0.892,
+   "planned": {
+    "N": 17,
+    "k": 1,
+    "wins": 90,
+    "runs": 94
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1026,
+     1026,
+     1026,
+     1026,
+     1026,
+     1026,
+     1028
+    ],
+    [
+     1026,
+     1026,
+     1026,
+     1026,
+     1026,
+     1026
+    ],
+    [
+     1188,
+     1026,
+     1026,
+     1026,
+     1026
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.935,
+    "margin": 0.13838945775561984,
+    "deaths": 0.235,
+    "T": 103.14751999999997,
+    "timedOut": 0,
+    "dry": 0.32
+   },
+   "econ": {
+    "zeny": 480,
+    "bag": {
+     "501": 57
+    },
+    "bought": {
+     "501": 16
+    },
+    "cost": 480,
+    "income": 754,
+    "drunk": {
+     "501": 16.12
+    },
+    "after": {
+     "zeny": 754,
+     "bag": {
+      "501": 41
+     }
+    }
+   },
+   "fights": 2171,
+   "timedOut": 0,
+   "s": 226,
+   "hard": {
+    "level": 51,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "cmd_fild02",
+    "label": "克魔島克克魔海邊",
+    "shape": "boss",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     4,
+     3,
+     3
+    ],
+    "filler": 1266,
+    "k": 1,
+    "income": 1046,
+    "drop": 0.216,
+    "win": 0.677,
+    "planned": {
+     "N": 9,
+     "k": 1,
+     "wins": 68,
+     "runs": 80
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1313,
+      1313,
+      1313,
+      1266
+     ],
+     [
+      1313,
+      1313,
+      1313
+     ],
+     [
+      1313,
+      1313,
+      1313
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.79,
+     "margin": 0.09907743741413916,
+     "deaths": 0.795,
+     "T": 83.16952,
+     "timedOut": 0,
+     "dry": 0.125
+    },
+    "econ": {
+     "income": 1274,
+     "drunk": {
+      "501": 46.18
+     }
+    },
+    "fights": 1566,
+    "timedOut": 0,
+    "s": 101
+   }
+  },
+  {
+   "level": 52,
+   "phase": "普通",
+   "map": "iz_dun02",
+   "label": "依斯魯得島 海盜地洞密穴 3樓",
+   "shape": "swarm",
+   "mob": null,
+   "floor": 2,
+   "sizes": [
+    5,
+    5
+   ],
+   "k": 1,
+   "income": 472,
+   "drop": 0.481,
+   "win": 0.973,
+   "planned": {
+    "N": 9,
+    "k": 1,
+    "wins": 98,
+    "runs": 99
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1044,
+     1044,
+     1044,
+     1044,
+     1044
+    ],
+    [
+     1044,
+     1044,
+     1044,
+     1044,
+     1044
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.98,
+    "margin": 0.2961318925809072,
+    "deaths": 0.14,
+    "T": 92.0764,
+    "timedOut": 0,
+    "dry": 0.895
+   },
+   "econ": {
+    "zeny": 754,
+    "bag": {
+     "501": 66
+    },
+    "bought": {
+     "501": 25
+    },
+    "cost": 750,
+    "income": 699,
+    "drunk": {
+     "501": 4.82
+    },
+    "after": {
+     "zeny": 703,
+     "bag": {
+      "501": 61
+     }
+    }
+   },
+   "fights": 1057,
+   "timedOut": 0,
+   "s": 52,
+   "hard": {
+    "level": 52,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "gon_fild01",
+    "label": "崑崙原野",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 1,
+    "sizes": [
+     4,
+     2
+    ],
+    "filler": 1119,
+    "k": 1,
+    "income": 708,
+    "drop": 1.902,
+    "win": 0.918,
+    "planned": {
+     "N": 5,
+     "k": 1,
+     "wins": 92,
+     "runs": 93
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1409,
+      1409,
+      1409,
+      1119
+     ],
+     [
+      1409,
+      1409
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.915,
+     "margin": 0.25199654372512226,
+     "deaths": 0.43,
+     "T": 53.73319999999997,
+     "timedOut": 0,
+     "dry": 0.805
+    },
+    "econ": {
+     "income": 837,
+     "drunk": {
+      "501": 7.51
+     }
+    },
+    "fights": 1653,
+    "timedOut": 0,
+    "s": 90
+   }
+  },
+  {
+   "level": 53,
+   "phase": "特殊",
+   "map": "moc_pryd05",
+   "label": "夢羅克金字塔 地下1樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    6,
+    6,
+    5,
+    5
+   ],
+   "k": 1,
+   "income": 599,
+   "drop": 0.294,
+   "win": 0.945,
+   "planned": {
+    "N": 22,
+    "k": 1,
+    "wins": 95,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1032,
+     1041,
+     1032,
+     1041,
+     1032,
+     1041
+    ],
+    [
+     1032,
+     1149,
+     1032,
+     1149,
+     1032,
+     1149
+    ],
+    [
+     1032,
+     1041,
+     1032,
+     1041,
+     1032
+    ],
+    [
+     1032,
+     1149,
+     1032,
+     1149,
+     1032
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.95,
+    "margin": 0.2775893065681909,
+    "deaths": 0.205,
+    "T": 115.99160000000003,
+    "timedOut": 0,
+    "dry": 0.21
+   },
+   "econ": {
+    "zeny": 703,
+    "bag": {
+     "501": 75,
+     "505": 4,
+     "656": 1
+    },
+    "bought": {
+     "501": 14,
+     "505": 4,
+     "656": 1
+    },
+    "cost": 680,
+    "income": 427,
+    "drunk": {
+     "501": 10.63,
+     "505": 4,
+     "656": 1
+    },
+    "after": {
+     "zeny": 450,
+     "bag": {
+      "501": 64
+     }
+    }
+   },
+   "fights": 897,
+   "timedOut": 1,
+   "s": 108,
+   "hard": {
+    "level": 53,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "prt_maze01",
+    "label": "普隆德拉迷宮森林 1樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     4,
+     3,
+     3,
+     2
+    ],
+    "filler": 1013,
+    "k": 1,
+    "income": 899,
+    "drop": 1.888,
+    "win": 0.834,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 84,
+     "runs": 93
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1114,
+      1166,
+      1114,
+      1013
+     ],
+     [
+      1114,
+      1166,
+      1114
+     ],
+     [
+      1114,
+      1166,
+      1114
+     ],
+     [
+      1114,
+      1166
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.825,
+     "margin": 0.11888728971372657,
+     "deaths": 0.635,
+     "T": 95.06319999999997,
+     "timedOut": 0,
+     "dry": 0.025
+    },
+    "econ": {
+     "income": 961,
+     "drunk": {
+      "501": 23.96,
+      "505": 4,
+      "656": 1
+     }
+    },
+    "fights": 1162,
+    "timedOut": 0,
+    "s": 68
+   }
+  },
+  {
+   "level": 54,
+   "phase": "BOSS",
+   "map": "prt_maze03",
+   "label": "普隆德拉迷宮森林 3樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 4,
+   "sizes": [
+    3,
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 730,
+   "drop": 4.326,
+   "win": 0.888,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 89,
+    "runs": 93
+   },
+   "down": 0,
+   "up": 1,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1101,
+     1101,
+     1101
+    ],
+    [
+     1101,
+     1101,
+     1101
+    ],
+    [
+     1139,
+     1101,
+     1101
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.89,
+    "margin": 0.1034643947721998,
+    "deaths": 0.36,
+    "T": 74.73679999999999,
+    "timedOut": 0,
+    "dry": 0.135
+   },
+   "econ": {
+    "zeny": 450,
+    "bag": {
+     "501": 77,
+     "656": 1
+    },
+    "bought": {
+     "501": 13,
+     "656": 1
+    },
+    "cost": 450,
+    "income": 748,
+    "drunk": {
+     "501": 33.44,
+     "656": 1
+    },
+    "after": {
+     "zeny": 748,
+     "bag": {
+      "501": 44
+     }
+    }
+   },
+   "fights": 968,
+   "timedOut": 0,
+   "s": 73,
+   "hard": {
+    "level": 54,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "in_sphinx1",
+    "label": "夢羅克人面獅身像 地下1樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     2,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 1095,
+    "drop": 104.308,
+    "win": 0.664,
+    "planned": {
+     "N": 6,
+     "k": 1,
+     "wins": 67,
+     "runs": 92
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1146,
+      1146
+     ],
+     [
+      1146,
+      1146
+     ],
+     [
+      1146,
+      1146
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.7,
+     "margin": 0.09082203493343105,
+     "deaths": 1.21,
+     "T": 45.091199999999986,
+     "timedOut": 0,
+     "dry": 0.27
+    },
+    "econ": {
+     "income": 1133,
+     "drunk": {
+      "501": 23.56,
+      "656": 1
+     }
+    },
+    "fights": 1651,
+    "timedOut": 0,
+    "s": 46
+   }
+  },
+  {
+   "level": 55,
+   "phase": "普通",
+   "map": "iz_dun04",
+   "label": "依斯魯得島 海盜地洞密穴 5樓",
+   "shape": "mixed",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "k": 1,
+   "income": 494,
+   "drop": 0.453,
+   "win": 0.972,
+   "planned": {
+    "N": 12,
+    "k": 1,
+    "wins": 98,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1264,
+     1065,
+     1108
+    ],
+    [
+     1065,
+     1108,
+     1264
+    ],
+    [
+     1108,
+     1264,
+     1065
+    ],
+    [
+     1264,
+     1065,
+     1108
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.97,
+    "margin": 0.17571723838421108,
+    "deaths": 0.13,
+    "T": 133.19248000000005,
+    "timedOut": 0,
+    "dry": 0.655
+   },
+   "econ": {
+    "zeny": 748,
+    "bag": {
+     "501": 68
+    },
+    "bought": {
+     "501": 24
+    },
+    "cost": 720,
+    "income": 481,
+    "drunk": {
+     "501": 14.24
+    },
+    "after": {
+     "zeny": 509,
+     "bag": {
+      "501": 54
+     }
+    }
+   },
+   "fights": 807,
+   "timedOut": 0,
+   "s": 71,
+   "hard": {
+    "level": 55,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "moc_fild17",
+    "label": "蘇克拉特沙漠",
+    "shape": "mixed",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     3,
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 741,
+    "drop": 1.381,
+    "win": 0.915,
+    "planned": {
+     "N": 9,
+     "k": 1,
+     "wins": 92,
+     "runs": 96
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1127,
+      1127,
+      1127
+     ],
+     [
+      1127,
+      1127,
+      1127
+     ],
+     [
+      1127,
+      1127
+     ],
+     [
+      1127,
+      1127
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.91,
+     "margin": 0.3412333310577925,
+     "deaths": 0.47,
+     "T": 92.62976,
+     "timedOut": 0,
+     "dry": 0.825
+    },
+    "econ": {
+     "income": 796,
+     "drunk": {
+      "501": 5.82
+     }
+    },
+    "fights": 1262,
+    "timedOut": 0,
+    "s": 111
+   }
+  },
+  {
+   "level": 56,
+   "phase": "特殊",
+   "map": "um_fild04",
+   "label": "汶巴拉滬家叢林",
+   "shape": "special",
+   "mob": null,
+   "floor": 0,
+   "sizes": [
+    4,
+    3,
+    2,
+    2
+   ],
+   "filler": 1069,
+   "k": 1,
+   "income": 626,
+   "drop": 0.986,
+   "win": 0.943,
+   "planned": {
+    "N": 10,
+    "k": 1,
+    "wins": 95,
+    "runs": 97
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1495,
+     1499,
+     1498,
+     1069
+    ],
+    [
+     1498,
+     1499,
+     1495
+    ],
+    [
+     1495,
+     1499
+    ],
+    [
+     1498,
+     1499
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.94,
+    "margin": 0.12933074269635303,
+    "deaths": 0.22,
+    "T": 99.78335999999999,
+    "timedOut": 0,
+    "dry": 0.3
+   },
+   "econ": {
+    "zeny": 509,
+    "bag": {
+     "501": 70
+    },
+    "bought": {
+     "501": 16
+    },
+    "cost": 480,
+    "income": 721,
+    "drunk": {
+     "501": 25.63
+    },
+    "after": {
+     "zeny": 750,
+     "bag": {
+      "501": 44
+     }
+    }
+   },
+   "fights": 1489,
+   "timedOut": 0,
+   "s": 87,
+   "hard": {
+    "level": 56,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "moc_pryd04",
+    "label": "夢羅克金字塔 4樓",
+    "shape": "special",
+    "mob": null,
+    "floor": 4,
+    "sizes": [
+     3,
+     3,
+     3,
+     2
+    ],
+    "k": 1,
+    "income": 939,
+    "drop": 1.618,
+    "win": 0.828,
+    "planned": {
+     "N": 11,
+     "k": 1,
+     "wins": 83,
+     "runs": 100
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1191,
+      1041,
+      1191
+     ],
+     [
+      1191,
+      1146,
+      1191
+     ],
+     [
+      1191,
+      1029,
+      1191
+     ],
+     [
+      1191,
+      1041
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.825,
+     "margin": 0.10705584136374291,
+     "deaths": 0.545,
+     "T": 89.8268,
+     "timedOut": 0,
+     "dry": 0.13
+    },
+    "econ": {
+     "income": 1072,
+     "drunk": {
+      "501": 32.56
+     }
+    },
+    "fights": 778,
+    "timedOut": 0,
+    "s": 60
+   }
+  },
+  {
+   "level": 57,
+   "phase": "BOSS",
+   "map": "gl_prison1",
+   "label": "克雷斯特漢姆古城 地下監獄 2樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 4,
+   "sizes": [
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 762,
+   "drop": 1.221,
+   "win": 0.884,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 89,
+    "runs": 96
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1035,
+     1035,
+     1035
+    ],
+    [
+     1035,
+     1035,
+     1035
+    ],
+    [
+     1035,
+     1035
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.935,
+    "margin": 0.11525692119986188,
+    "deaths": 0.225,
+    "T": 70.796,
+    "timedOut": 0,
+    "dry": 0.21
+   },
+   "econ": {
+    "zeny": 750,
+    "bag": {
+     "501": 69
+    },
+    "bought": {
+     "501": 25
+    },
+    "cost": 750,
+    "income": 797,
+    "drunk": {
+     "501": 33.26
+    },
+    "after": {
+     "zeny": 797,
+     "bag": {
+      "501": 36
+     }
+    }
+   },
+   "fights": 2417,
+   "timedOut": 0,
+   "s": 138,
+   "hard": {
+    "level": 57,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "gef_dun01",
+    "label": "吉芬地下密穴 2樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 5,
+    "sizes": [
+     5,
+     4,
+     4
+    ],
+    "filler": 1108,
+    "k": 1,
+    "income": 1143,
+    "drop": 1.053,
+    "win": 0.652,
+    "planned": {
+     "N": 12,
+     "k": 1,
+     "wins": 66,
+     "runs": 95
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1036,
+      1130,
+      1036,
+      1130,
+      1108
+     ],
+     [
+      1130,
+      1036,
+      1130,
+      1036
+     ],
+     [
+      1061,
+      1036,
+      1130,
+      1036
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.635,
+     "margin": 0.06586264491910214,
+     "deaths": 1.255,
+     "T": 93.49391999999997,
+     "timedOut": 0,
+     "dry": 0.075
+    },
+    "econ": {
+     "income": 1204,
+     "drunk": {
+      "501": 37.17
+     }
+    },
+    "fights": 1981,
+    "timedOut": 0,
+    "s": 130
+   }
+  },
+  {
+   "level": 58,
+   "phase": "普通",
+   "map": "pay_fild10",
+   "label": "斐揚森林",
+   "shape": "swarm",
+   "mob": "野豬（Savage）",
+   "floor": 2,
+   "sizes": [
+    4,
+    4
+   ],
+   "k": 1,
+   "income": 515,
+   "drop": 1.418,
+   "win": 0.971,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 98,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1166,
+     1166,
+     1166,
+     1166
+    ],
+    [
+     1166,
+     1166,
+     1166,
+     1166
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.965,
+    "margin": 0.42216596764529674,
+    "deaths": 0.195,
+    "T": 47.50616,
+    "timedOut": 0,
+    "dry": 0.91
+   },
+   "econ": {
+    "zeny": 797,
+    "bag": {
+     "501": 62
+    },
+    "bought": {
+     "501": 26
+    },
+    "cost": 780,
+    "income": 594,
+    "drunk": {
+     "501": 3.8
+    },
+    "after": {
+     "zeny": 611,
+     "bag": {
+      "501": 58
+     }
+    }
+   },
+   "fights": 1063,
+   "timedOut": 0,
+   "s": 35,
+   "hard": {
+    "level": 58,
+    "variant": "hard",
+    "phase": "普通",
+    "map": "prt_fild11",
+    "label": "普隆德拉原野",
+    "shape": "swarm",
+    "mob": null,
+    "floor": 0,
+    "sizes": [
+     3,
+     3
+    ],
+    "k": 1,
+    "income": 773,
+    "drop": 1.423,
+    "win": 0.912,
+    "planned": {
+     "N": 5,
+     "k": 1,
+     "wins": 92,
+     "runs": 98
+    },
+    "down": 0,
+    "up": 1,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1280,
+      1280,
+      1280
+     ],
+     [
+      1280,
+      1280,
+      1280
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.905,
+     "margin": 0.16515799619662921,
+     "deaths": 0.395,
+     "T": 50.63080000000003,
+     "timedOut": 0,
+     "dry": 0.74
+    },
+    "econ": {
+     "income": 831,
+     "drunk": {
+      "501": 10.69
+     }
+    },
+    "fights": 1118,
+    "timedOut": 0,
+    "s": 49
+   }
+  },
+  {
+   "level": 59,
+   "phase": "特殊",
+   "map": "iz_dun03",
+   "label": "依斯魯得島 海盜地洞密穴 4樓",
+   "shape": "special",
+   "mob": null,
+   "floor": 3,
+   "sizes": [
+    7,
+    6,
+    5,
+    5
+   ],
+   "filler": 1152,
+   "k": 1,
+   "income": 653,
+   "drop": 0.366,
+   "win": 0.941,
+   "planned": {
+    "N": 22,
+    "k": 1,
+    "wins": 95,
+    "runs": 100
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1045,
+     1069,
+     1045,
+     1069,
+     1045,
+     1069,
+     1152
+    ],
+    [
+     1045,
+     1069,
+     1045,
+     1069,
+     1045,
+     1069
+    ],
+    [
+     1045,
+     1069,
+     1045,
+     1069,
+     1045
+    ],
+    [
+     1045,
+     1069,
+     1045,
+     1069,
+     1045
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.935,
+    "margin": 0.10785791350241235,
+    "deaths": 0.215,
+    "T": 161.52176000000003,
+    "timedOut": 0,
+    "dry": 0.155
+   },
+   "econ": {
+    "zeny": 611,
+    "bag": {
+     "501": 78
+    },
+    "bought": {
+     "501": 20
+    },
+    "cost": 600,
+    "income": 691,
+    "drunk": {
+     "501": 36.91
+    },
+    "after": {
+     "zeny": 702,
+     "bag": {
+      "501": 41
+     }
+    }
+   },
+   "fights": 1667,
+   "timedOut": 0,
+   "s": 231,
+   "hard": {
+    "level": 59,
+    "variant": "hard",
+    "phase": "特殊",
+    "map": "gon_fild01",
+    "label": "崑崙原野",
+    "shape": "special",
+    "mob": null,
+    "floor": 3,
+    "sizes": [
+     3,
+     3,
+     2,
+     2
+    ],
+    "k": 1,
+    "income": 980,
+    "drop": 1.189,
+    "win": 0.822,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 83,
+     "runs": 99
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1037,
+      1415,
+      1037
+     ],
+     [
+      1037,
+      1415,
+      1037
+     ],
+     [
+      1037,
+      1415
+     ],
+     [
+      1037,
+      1415
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.83,
+     "margin": 0.09686536682080175,
+     "deaths": 0.55,
+     "T": 81.51447999999996,
+     "timedOut": 0,
+     "dry": 0.09
+    },
+    "econ": {
+     "income": 1007,
+     "drunk": {
+      "501": 43.5
+     }
+    },
+    "fights": 705,
+    "timedOut": 0,
+    "s": 35
+   }
+  },
+  {
+   "level": 60,
+   "phase": "BOSS",
+   "map": "gl_cas01",
+   "label": "克雷斯特漢姆古城 1樓",
+   "shape": "boss",
+   "mob": null,
+   "floor": 5,
+   "sizes": [
+    3,
+    3,
+    2
+   ],
+   "k": 1,
+   "income": 794,
+   "drop": 1.88,
+   "win": 0.88,
+   "planned": {
+    "N": 8,
+    "k": 1,
+    "wins": 88,
+    "runs": 98
+   },
+   "down": 0,
+   "up": 0,
+   "fits": true,
+   "fallback": false,
+   "waves": [
+    [
+     1281,
+     1281,
+     1281
+    ],
+    [
+     1281,
+     1281,
+     1281
+    ],
+    [
+     1260,
+     1281
+    ]
+   ],
+   "val": {
+    "runs": 200,
+    "won": 0.87,
+    "margin": 0.11049608694600349,
+    "deaths": 0.48,
+    "T": 89.79896,
+    "timedOut": 0,
+    "dry": 0.205
+   },
+   "econ": {
+    "zeny": 702,
+    "bag": {
+     "501": 64
+    },
+    "bought": {
+     "501": 23
+    },
+    "cost": 690,
+    "income": 868,
+    "drunk": {
+     "501": 33.06
+    },
+    "after": {
+     "zeny": 880,
+     "bag": {
+      "501": 31
+     }
+    }
+   },
+   "fights": 1047,
+   "timedOut": 4,
+   "s": 72,
+   "hard": {
+    "level": 60,
+    "variant": "hard",
+    "phase": "BOSS",
+    "map": "in_sphinx1",
+    "label": "夢羅克人面獅身像 地下1樓",
+    "shape": "boss",
+    "mob": null,
+    "floor": 2,
+    "sizes": [
+     5,
+     3,
+     3
+    ],
+    "filler": 1139,
+    "k": 1,
+    "income": 1191,
+    "drop": 12.94,
+    "win": 0.64,
+    "planned": {
+     "N": 10,
+     "k": 1,
+     "wins": 64,
+     "runs": 82
+    },
+    "down": 0,
+    "up": 0,
+    "fits": true,
+    "fallback": false,
+    "waves": [
+     [
+      1178,
+      1178,
+      1178,
+      1178,
+      1139
+     ],
+     [
+      1178,
+      1178,
+      1178
+     ],
+     [
+      1164,
+      1178,
+      1178
+     ]
+    ],
+    "val": {
+     "runs": 200,
+     "won": 0.655,
+     "margin": 0.07361561350880588,
+     "deaths": 1.075,
+     "T": 94.37888000000001,
+     "timedOut": 0,
+     "dry": 0.06
+    },
+    "econ": {
+     "income": 1221,
+     "drunk": {
+      "501": 29.51
+     }
+    },
+    "fights": 1692,
+    "timedOut": 6,
+    "s": 86
+   }
+  }
+ ],
+ "members": [
+  {
+   "sex": "남",
+   "job": "검사",
+   "weapon": "검",
+   "held": "검",
+   "build": "b3",
+   "skillBuild": "s24",
+   "tactic": "job"
+  },
+  {
+   "sex": "남",
+   "job": "마법사",
+   "weapon": "롯드",
+   "held": "롯드",
+   "build": "b4",
+   "skillBuild": "s3",
+   "tactic": "job"
+  },
+  {
+   "sex": "남",
+   "job": "성직자",
+   "weapon": "롯드",
+   "held": "롯드",
+   "build": "b11",
+   "skillBuild": "s6",
+   "tactic": "job"
+  }
+ ],
+ "potions": {
+  "stock": 2,
+  "price": 1,
+  "sp": 1,
+  "speed": true
+ },
+ "hard": {
+  "loss": 3,
+  "pay": 1.5
+ }
+}

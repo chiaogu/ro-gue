@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>RO 遠征</title>
+<link rel="icon" href="../viewer/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="../viewer/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="RO 遠征">
+<meta name="theme-color" content="#000000">
+<style>
+  /* RO's basic skin, drawn in CSS (by request: the client's bitmaps were blurry scaled up, so none of them is used): white
+     windows with a blue striped title bar, a grey striped bottom bar with the buttons, grey rounded buttons that turn blue
+     under the pointer, navy labels on blue-grey cells and pale blue value cells (the client's colours, sampled from
+     login_interface/win_select), 12 px text. --z: how much bigger the windows are drawn on a big screen. */
+  :root { --label: #c4cedd; --labeltext: #273c65; --cell: #e9eff7; --line: #aec0db;
+          --text: #222; --muted: #6b7486; --gold: #b07a00; --bad: #9a6a00; --good: #2f9a3a; --accent: #2f55c8; --z: 1; }
+  /* (no red text, by request: what is to stand out is --accent, the title bar's blue; what went wrong --bad, dark amber) */
+  :root { --z: 1.35; }
+  @media (min-width: 1000px) and (min-height: 640px) { :root { --z: 1.6; } }
+  @media (min-width: 1500px) and (min-height: 860px) { :root { --z: 2; } }
+  /* (a game, not a page, by request: no double-tap zoom, no picking out text — long press included — except in a text box) */
+  * { box-sizing: border-box; touch-action: manipulation; -webkit-touch-callout: none;
+      user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+  input, textarea { user-select: text; -webkit-user-select: text; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #000; color: var(--text);
+               font: 12px/1.35 "MingLiU", "PMingLiU", "細明體", "新細明體", Gulim, Dotum, "PingFang TC", "Heiti TC", Tahoma, sans-serif;
+               user-select: none; -webkit-user-select: none; }
+  img, canvas { image-rendering: pixelated; }
+  .muted { color: var(--muted); }
+  .bad { color: var(--bad); } .good { color: var(--good); }
+  .small { font-size: 11px; }
+  /* ---------- the skin's parts ---------- */
+  /* (rounded at all four corners, by request; what is inside is cut to them) */
+  .win { position: relative; background: #fff; border: 1px solid #8f9fbf; border-radius: 6px; overflow: hidden;
+         box-shadow: 2px 2px 0 rgba(0,0,0,.25); display: flex; flex-direction: column; min-width: 0; min-height: 0; zoom: var(--z); }
+  .tb { flex: none; height: 17px; line-height: 17px; padding: 0 20px 0 18px; white-space: nowrap; overflow: hidden; color: #000; position: relative;
+        background: repeating-linear-gradient(transparent 0 2px, rgba(255,255,255,.18) 2px 3px),
+                    linear-gradient(#e2e9f8, #b6c6e8 45%, #a3b7e2 55%, #d6e3fa); border-bottom: 1px solid #44527a; }
+  /* (the client's round blue knob at the title's left) */
+  .tb::before { content: ''; position: absolute; left: 4px; top: 3px; width: 10px; height: 10px; border-radius: 50%;
+                background: radial-gradient(circle at 50% 35%, #fff 0 18%, #8fb2ff 30%, #2f5fd0 75%, #1c3c94); box-shadow: 0 0 0 1px #3a5aa8; }
+  .tb .x { position: absolute; right: 3px; top: 2px; width: 12px; height: 12px; padding: 0; border: 1px solid #8b98b8; border-radius: 2px; background: #f4f6fb;
+           cursor: pointer; font: bold 10px/9px Tahoma, sans-serif; color: #44527a; }
+  .tb .x::before { content: '×'; }
+  .tb .x:hover { background: #e6edfd; border-color: #44527a; }
+  .wb { flex: 1; min-height: 0; overflow: auto; padding: 6px 8px; }
+  .bb { flex: none; height: 24px; display: flex; align-items: center; justify-content: flex-end; gap: 3px; padding: 0 4px;
+        border-top: 1px solid #d6d6d6; background: repeating-linear-gradient(#fbfbfb 0 2px, #ececec 2px 3px); }
+  .bb .grow { flex: 1; }
+  /* a button: grey and rounded, blue under the pointer, pressed in */
+  .rb { font: inherit; color: #000; height: 20px; padding: 0 9px; border: 1px solid #9c9c9c; border-radius: 5px; cursor: pointer; white-space: nowrap; min-width: 42px;
+        background: linear-gradient(#fff, #f1f1f1 45%, #dedede 55%, #ececec); box-shadow: inset 0 1px 0 #fff; }
+  .rb.on { border-color: #6f86c4; background: linear-gradient(#f3f7ff, #d9e4fb 45%, #bccdf2 55%, #d3e0fa); }
+  /* (only where the pointer hovers: on a phone a tap leaves it, and a tab closed would look picked) */
+  @media (hover: hover) { .rb:hover:not(:disabled) { border-color: #6f86c4; background: linear-gradient(#f3f7ff, #d9e4fb 45%, #bccdf2 55%, #d3e0fa); } }
+  .rb:active:not(:disabled) { background: linear-gradient(#b9c9ee, #d3dff8); box-shadow: inset 0 1px 2px rgba(0,0,0,.25); }
+  .rb.on { font-weight: bold; color: var(--labeltext); }
+  .rb:disabled { color: #aaa; cursor: default; border-color: #c8c8c8; background: linear-gradient(#fafafa, #ededed); }
+  .rb:focus { outline: none; }
+  .rb:focus-visible { outline: 1px dotted #4d5f97; outline-offset: -3px; }
+  /* a small arrow button (◀ ▶ ▲ ▼; sl, sr: the smaller ones by a value): a blue triangle */
+  .arw { position: relative; width: 14px; height: 14px; border: 0; padding: 0; cursor: pointer; background: none; flex: none; }
+  .arw::before { content: ''; position: absolute; inset: 2px; background: linear-gradient(135deg, #b9cbf5, #5874c4); }
+  .arw:hover:not(:disabled)::before { background: linear-gradient(135deg, #d8e4ff, #2f55c8); }
+  .arw:disabled { opacity: .25; cursor: default; }
+  .arw.l::before, .arw.sl::before { clip-path: polygon(85% 0, 10% 50%, 85% 100%); }
+  .arw.r::before, .arw.sr::before { clip-path: polygon(15% 0, 90% 50%, 15% 100%); }
+  .arw.u::before { clip-path: polygon(0 85%, 50% 10%, 100% 85%); }
+  .arw.d::before { clip-path: polygon(0 15%, 50% 90%, 100% 15%); }
+  .arw.sl, .arw.sr { width: 11px; height: 12px; }
+  .arw.sl::before, .arw.sr::before { inset: 1px; }
+  select.rs { font: inherit; height: 18px; border: 1px solid var(--line); background: #fff; color: #000; border-radius: 3px; max-width: 100%; }
+  .gauge { height: 8px; border: 1px solid #6d7fa8; border-radius: 4px; background: #e9eef8; overflow: hidden; }
+  .gauge i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(#7ee08a, #2b9f3c); }
+  .gauge.sp i { background: linear-gradient(#8ab6ff, #3060c8); }
+  .gauge.low i { background: linear-gradient(#ff9a8a, #d0302a); }
+
+  /* ---------- the screens ---------- */
+  #arena { position: fixed; inset: 0; }
+  #arena canvas { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: auto; }
+  #fx { pointer-events: none; }
+  .screen { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 12px; }
+  .screen[hidden] { display: none; }
+  .screen.dim { background: rgba(0, 0, 0, .35); }
+  .screen.layer { z-index: 10; background: rgba(0,0,0,.2); }
+  /* 選項, on every screen (the client's option button's place): a gear alone, see-through (by request: no button
+     around it), a dark edge to show on the white title too */
+  #setbtn, #setbtn:hover, #setbtn:active { position: fixed; top: 8px; right: 8px; z-index: 11; zoom: var(--z); min-width: 0; width: 22px; height: 20px; padding: 0;
+            display: grid; place-items: center; background: none; border: 0; box-shadow: none; opacity: .7; }
+  #setbtn:hover { opacity: 1; }
+  #setbtn svg { width: 16px; height: 16px; fill: #fff; filter: drop-shadow(0 0 1px rgba(0,0,0,.8)); }
+  /* the windows over everything clear of it at the top */
+  .screen.dim, .screen.layer, #s-result { padding-top: calc(14px + 26px * var(--z)); }
+  /* 結算 (its tabs under it) at the foot, half the screen high at most, the camera on the party over it (by request: game.js mapOver) */
+  #s-result { align-items: flex-end; }
+  #result > .resinfo { display: flex; flex-direction: column; align-items: center; gap: 6px; max-height: calc(50dvh - 12px); }
+  #result > .resinfo > .win { flex: 0 1 auto; min-height: 0; max-height: calc((50dvh - 18px - 30px * var(--z)) / var(--z)); }
+  #result .tabs { align-self: stretch; }
+  /* 統計: a row a figure, a column a character */
+  .tally th { text-align: right; padding: 1px 4px; white-space: nowrap; color: var(--labeltext); border-bottom: 1px solid #dde3ee; }
+  .tally td.k { color: var(--labeltext); white-space: nowrap; }
+  .tally th canvas { width: 40px; height: 40px; vertical-align: bottom; }
+  .tally td.num .bagit { display: inline-flex; align-items: center; margin-left: 4px; }
+  .tallyscroll { overflow-x: auto; }
+  .tally th.rv { border-bottom-color: var(--bad); } .tally td.rv, .tally th.rv { background: #fbf6ea; }
+  /* the title (by request): white, the logo in the middle (nearly the width of a phone), the menu's window under it */
+  #s-title { background: #fff; flex-direction: column; gap: 3vh; }
+  #s-title .logo { width: min(96vw, 620px, 80vh); height: auto; image-rendering: auto; }
+  .titlewin { width: 200px; }
+  .titlewin .menu { display: flex; flex-direction: column; gap: 5px; padding: 8px 12px 10px; }
+  .titlewin .menu .rb { width: 100%; }
+  .titlewin .saved { font-size: 11px; color: var(--muted); text-align: center; margin: -2px 0 2px; }
+  /* 建立隊伍 (game.js newGame; by request in the client's style, not its window): the three characters along the top
+     (the one picked framed as the client's select box), under them the picked one's look, job and sex on the left and
+     its stats on the hexagon on the right (a triangle a stat, its value by it), side by side or, narrow, one above the other */
+  .create { width: 560px; max-width: calc((100vw - 24px) / var(--z)); max-height: calc((100dvh - 26px) / var(--z) - 26px); }
+  .create .wb { padding: 8px 10px; }
+  .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 8px; }
+  .slot { position: relative; border: 1px solid #aec0db; border-radius: 4px; cursor: pointer; text-align: center; padding: 2px 0 3px; background: #fff; }
+  .slot canvas { width: 100%; max-width: 88px; height: auto; aspect-ratio: 110 / 118; display: block; margin: 0 auto; }
+  .slot .nm { font-weight: bold; color: var(--labeltext); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 4px; }
+  .slot .role { font-size: 11px; color: #646464; }
+  .slots.one { grid-template-columns: minmax(0, 130px); justify-content: center; }
+  /* (its frame thickened inside by a shadow, not a wider border: nothing in it moves or shrinks as it is picked) */
+  .slot.on { border-color: #7b8fcc; box-shadow: inset 0 0 0 1px #7b8fcc, inset 0 0 0 2px #c4cedd; background: #f6f8fd; }
+  .slot.on .role { color: var(--accent); font-weight: bold; }
+  .editor { display: grid; grid-template-columns: 1fr 210px; gap: 10px; align-items: start; border-top: 1px solid #e3e8f2; padding-top: 8px; }
+  .looks { display: flex; flex-direction: column; gap: 10px; }
+  .looks .row { display: flex; align-items: center; gap: 4px; }
+  .looks .k { width: 30px; flex: none; color: var(--labeltext); font-weight: bold; }
+  .looks .val { min-width: 34px; text-align: center; }
+  .namebox { flex: 1; min-width: 0; height: 18px; font: inherit; border: 1px solid #a9b2c4; padding: 0 3px; background: #f4f4f4; user-select: text; }
+  .jobgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; flex: 1; }
+  .jobgrid .rb { min-width: 0; padding: 0 4px; }
+  /* 轉職 (game.js carousel: jobMenu's first jobs): the jobs on a carousel, the middle one large, its neighbours small and faded at
+     its sides (where each stands: game.js's place, JC_X etc.; while dragged, .drag, following without easing),
+     under it the town's minimap and name on the left, the job's name on the right; the strip shown only as tall as a
+     figure is (.jcs: the canvases' empty top over the line above, clipped at the sides alone) */
+  .jchint { margin-bottom: 0; }
+  .jcs { position: relative; height: 128px; overflow-x: clip; overflow-y: visible; touch-action: pan-y; user-select: none; }
+  .jc { position: absolute; left: 50%; bottom: 0; width: 150px; height: 170px; margin-left: -75px; image-rendering: pixelated;
+        transform-origin: 50% 100%; transition: transform .3s ease, opacity .3s ease; cursor: pointer; }
+  .jcs.drag .jc { transition: none; }
+  .jcname { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 4px; }
+  .jcname .town { display: flex; align-items: center; gap: 6px; }
+  .jcname img { width: 40px; height: 40px; object-fit: contain; background: #000; border: 1px solid var(--line); }
+  .jcname small { color: var(--labeltext); font-size: 12px; }
+  .jcname b { font-size: 15px; color: var(--accent); }
+  /* the map ahead's 轉職 (game.js prep): the two second jobs side by side, as the first jobs' carousel (no frames):
+     the one picked whole, the other faded; under them a .jcname as the carousel's */
+  /* (each half as narrow as the window leaves it: the figure's transparent sides past it, clipped, so the window
+     never grows wider than the phone's screen for them) */
+  .jobduo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow-x: clip; }
+  .jd { min-width: 0; border: 0; background: none; padding: 0; cursor: pointer; font: inherit; display: flex; flex-direction: column; align-items: center;
+        opacity: .5; transition: opacity .3s ease; }
+  .jd canvas { flex: none; width: 150px; height: 170px; margin-top: -24px; image-rendering: pixelated; }
+  .jd.on { opacity: 1; cursor: default; }
+  .jd:hover:not(.on) { opacity: .8; }
+  .looks select.rs { flex: 1; min-width: 0; }
+  .hexbox { position: relative; width: 210px; height: 212px; justify-self: center; }
+  .hexbox svg { position: absolute; left: 0; top: 0; }
+  .hexbox .grid { fill: none; stroke: #7b8fcc; stroke-width: 1; }
+  .hexbox .shape { fill: #7b8fcc; }
+  .hexbox .val { font: 11px Tahoma, sans-serif; fill: var(--accent); paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+  /* a stat's triangle at its corner of the hexagon (the client's arw-*): pointing out (--a), its name across it */
+  .tri { position: absolute; width: 38px; height: 34px; border: 0; padding: 0; background: none; cursor: pointer;
+         font: bold 10px Tahoma, sans-serif; color: #273c65; }
+  .tri::before { content: ''; position: absolute; inset: 0; transform: rotate(var(--a)); clip-path: polygon(50% 4%, 98% 92%, 2% 92%);
+                 background: linear-gradient(#f3f6fd, #b6c4e6 70%, #93a6d6); }
+  .tri span { position: relative; }
+  .tri:hover:not(:disabled)::before { background: linear-gradient(#ffffff, #c9d6f6 70%, #7f98dc); }
+  .tri:active:not(:disabled)::before { background: linear-gradient(#ffe2ea, #f59ab4 70%, #e0587f); }
+  .tri:disabled { cursor: default; }
+  .hexnote { text-align: center; color: var(--labeltext); }
+  .hexnote b { color: var(--accent); }
+  @media (max-width: 599px) {
+    #s-create { align-items: flex-start; }
+    /* (the three side by side, all of them whole, no scrolling sideways: by request) */
+    .slots { gap: 6px; margin-bottom: 4px; }
+    .slot { min-width: 0; }
+    .slot canvas { max-width: 76px; }
+    .slot .role .more { display: none; }
+    .editor { grid-template-columns: 1fr; gap: 10px; padding-top: 10px; }
+    .looks { gap: 9px; }
+    .hexbox { zoom: .7; margin: 0 auto; }
+  }
+  /* the map ahead (game.js prep): 關卡 (the odds and 出發 at its foot) and 商店, one at a time behind tabs at the
+     screen's foot (by request; a tab tapped again closes its window), the window over them (the camera frames the
+     party in what is left above it, game.js frame); the arena takes the clicks
+     the windows do not (a character tapped: its status and skills) */
+  #s-prep { padding: 8px; align-items: stretch; justify-content: stretch; pointer-events: none; }
+  #s-prep .win, #s-prep .tabs { pointer-events: auto; }
+  .prep { flex: 1; display: flex; flex-direction: column; gap: 10px; height: calc(100dvh - 16px); min-height: 0; }
+  .prep > .note { align-self: center; margin-top: 20vh; }
+  .tabs { display: flex; justify-content: center; gap: 4px; zoom: var(--z); margin-bottom: env(safe-area-inset-bottom); }
+  .tabs .rb { flex: 1; max-width: 80px; }
+  /* (a character's info open: its own tabs in the same place, the map ahead's put away under them) */
+  #s-prep:has(~ #s-alloc:not([hidden])) .tabs { visibility: hidden; }
+  .panes { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; }
+  .mobcard { flex: 0 1 auto; width: 100%; max-width: 420px; max-height: calc((100dvh - 52dvh - 60px) / var(--z)); }
+  .mobcard[hidden], .panes:not([data-tab="map"]) .mobcard { display: none; }
+  .mobcard .wb { overflow-y: auto; padding: 6px 8px; }
+  .mobcard .mtitle { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; } .mobcard .mtitle b { font-size: 14px; margin-right: 2px; }
+  .mobcard table { width: 100%; border-collapse: collapse; }
+  .mobcard th { text-align: left; font-weight: normal; color: var(--labeltext); width: 40px; white-space: nowrap; padding: 1px 4px 1px 0; }
+  .mobcard td { padding: 1px 4px; border-bottom: 1px solid #eef1f6; } .mobcard td.num { text-align: right; white-space: nowrap; vertical-align: top; }
+  .mobcard h4 { margin: 6px 0 3px; color: var(--labeltext); font-size: 12px; }
+  .mobcard .mtags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 5px; }
+  .pane { display: none; width: 100%; max-width: 420px; max-height: calc(52dvh / var(--z)); }
+  .panes[data-tab="map"] [data-pane="map"], .panes[data-tab="shop"] [data-pane="shop"], .panes[data-tab="recruit"] [data-pane="recruit"], .panes[data-tab="job"] [data-pane="job"], .panes[data-tab="view"] [data-pane="view"], .panes[data-tab="pvp"] [data-pane="pvp"] { display: flex; }
+  /* 對戰 (game.js drawPvp): the rival teams as 繼續遊戲's cards, the one picked lit */
+  [data-pane="pvp"] > .wb { overflow-y: auto; }
+  .pvpnote { line-height: 1.4; margin-bottom: 6px; }
+  .save.pvpteam.on { background: #e6eefc; border-color: #6d8ad0; box-shadow: inset 0 0 0 1px #6d8ad0; }
+  /* 過往紀錄's party in town, read-only (game.js viewRecord): the record's one window */
+  .recview { line-height: 1.5; } .recview .where { font-weight: bold; color: var(--labeltext); }
+  [data-pane="view"] .bb { gap: 6px; padding: 0 6px; }
+  /* 商店's own tabs (補給品, 武器), kept at the top as the list under them scrolls */
+  .subtabs { position: sticky; top: -6px; z-index: 1; display: flex; gap: 2px; margin: -6px -8px 4px; padding: 4px 8px; background: #fff; border-bottom: 1px solid #eef1f6; }
+  .subtabs .rb { flex: 1; }
+  [data-pane="recruit"] > .wb { overflow-y: auto; }
+  [data-pane="recruit"] .rtext { padding: 2px 2px 6px; line-height: 1.4; }
+  .rswap { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 4px 0 6px; }
+  .rslot { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 84px; }
+  .rslot canvas, .rslot > span { width: 48px; height: 48px; border: 1px solid #c9d2e3; border-radius: 4px; background: #f6f8fc; }
+  .rslot.empty > span { display: flex; align-items: center; justify-content: center; border-style: dashed; color: var(--muted); font-size: 18px; }
+  .rslot small { font-size: 11px; white-space: nowrap; } .rslot.empty small { color: var(--muted); }
+  .rarrow { font-size: 20px; color: var(--labeltext); margin-bottom: 16px; }
+  .rbtns { display: flex; gap: 6px; }
+  .pane.waiting { display: none !important; }
+  .pane .bb:has(#p-go) { height: auto; gap: 10px; padding: 5px 8px; justify-content: flex-start; }
+  .odds { font: bold 24px/1 Tahoma, sans-serif; }
+  .oddsbox { display: flex; gap: 10px; align-items: center; } body.no-odds .oddsbox { display: none; }
+  .meter { height: 3px; background: #dde3ee; margin-top: 3px; width: 70px; }
+  .meter i { display: block; height: 100%; background: #6d8ad0; }
+  .odds.good { color: var(--good); } .odds.warn { color: var(--gold); } .odds.bad { color: var(--bad); }
+  /* 關卡: the map (its minimap, name, kind, waves and pay), then a row a wave: its number, its monsters (a picture each,
+     fitted to its square: game.js drawWaveThumbs; the name, under it the level and how many) */
+  .maphead { display: grid; grid-template-columns: 52px 1fr; gap: 8px; align-items: center; padding-bottom: 6px; margin-bottom: 4px; border-bottom: 1px solid #dde3ee; }
+  .maphead img { width: 52px; height: 52px; object-fit: contain; background: #000; border: 1px solid var(--line); image-rendering: auto; }
+  .maphead .name { font-weight: bold; font-size: 13px; color: var(--labeltext); margin-bottom: 2px; }
+  .maphead .row { display: flex; align-items: center; gap: 6px; line-height: 16px; }
+  .tag { display: inline-block; padding: 0 5px; line-height: 15px; border-radius: 3px; background: var(--label); color: var(--labeltext); font-weight: bold; font-size: 11px; }
+  .tag.p1 { background: #f6dd8a; color: #6a4a00; } .tag.p2 { background: #c9b4ec; color: #3d2470; }
+  .tag.hard { background: #f2b8b5; color: #7a1712; margin-left: 4px; }
+  /* 卡片 (game.js cardHand, by request: a hand of cards floating over the scene, no window): the illustrations side by
+     side, a slight fan, the middle one lit; dragged sideways or the middle one up (touch-action none: the drag is
+     the hand's). Under it the middle one's name and what it does (cardInfo), light on the scene with a shadow; at
+     the top left the other side's stack (.cpile), lit while a card dragged up is far enough to go into it */
+  .cardfloat { zoom: var(--z); width: min(420px, calc((100vw - 16px) / var(--z))); color: #fff; text-shadow: 0 0 2px #000, 0 1px 3px #000, 0 0 6px rgba(0,0,0,.7);
+    display: flex; flex-direction: column; align-items: center; gap: 4px; pointer-events: auto; min-height: 0; }
+  .cardfloat .cnone { padding: 40px 0; opacity: .85; }
+  .fan { position: relative; align-self: stretch; height: 146px; flex: none; touch-action: none; user-select: none; -webkit-user-select: none; }
+  .fan.big { height: 190px; }
+  .fan .hc { position: absolute; left: 50%; top: 6px; width: 96px; height: 128px; margin-left: -48px; transform-origin: 50% 50%;
+    transition: transform .25s ease-out, opacity .25s; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,.55); background: #d9dee8; cursor: grab; }
+  .fan.big .hc { width: 128px; height: 171px; margin-left: -64px; }
+  .fan.drag .hc { transition: none; }
+  .fan .hc.fly { transition: transform .2s cubic-bezier(.15,.75,.3,1), opacity .2s ease-out !important; }
+  .fan .hc img { width: 100%; height: 100%; border-radius: 6px; display: block; pointer-events: none; }
+  .fan .hc:not(.mid) img { filter: brightness(.75); }
+  .fan .hc.ready { box-shadow: 0 0 0 2px #fff, 0 0 14px 4px rgba(120,170,255,.9); }
+  /* (the name and what it does in a white window, by request; the description two lines high always, scrolled when
+     longer, the hand not moving as one card or another is in the middle) */
+  .cardfloat .cinfo { zoom: 1; align-self: stretch; text-shadow: none; color: var(--text); position: relative; }  /* (a .win: the page's zoom once, .cardfloat's) */
+  .cinfo .tb { padding-right: 6px; }  /* (the card's name in the title bar, by request) */
+  .cinfo .cwarn { float: right; color: #7a1712; font-size: 11px; }
+  .cinfo .cdesc { white-space: pre-wrap; line-height: 1.45; height: 5.8em; overflow-y: auto; padding: 4px 8px 5px; box-sizing: content-box; }
+  .cinfo.more .cdesc { -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+  .cinfo.more::after { content: '▼'; position: absolute; right: 6px; bottom: 2px; font-size: 9px; color: var(--accent); pointer-events: none; }
+  .cpile { position: fixed; left: 10px; top: calc(14px + 26px * var(--z)); zoom: var(--z); z-index: 3; pointer-events: auto; background: none; border: 0; padding: 0;
+    cursor: pointer; display: flex; flex-direction: column; align-items: center; color: #fff; font: inherit; text-shadow: 0 0 2px #000, 0 1px 3px #000; transition: transform .15s; }
+  .cpile .stk { position: relative; width: 52px; height: 58px; }
+  .cpile .stk i { position: absolute; left: 8px; top: 4px; width: 36px; height: 48px; border-radius: 3px; background: #d9dee8; box-shadow: 0 1px 4px rgba(0,0,0,.6); overflow: hidden; }
+  .cpile .stk i:nth-child(1) { transform: rotate(-16deg) translate(-5px, 2px); }
+  .cpile .stk i:nth-child(2) { transform: rotate(-4deg); }
+  .cpile .stk i:nth-child(3) { transform: rotate(10deg) translate(5px, 1px); }
+  .cpile .stk i.none { background: rgba(0,0,0,.45); border: 1px dashed rgba(255,255,255,.7); box-shadow: none; transform: rotate(-8deg); }  /* (none: a dark see-through card's place, by request) */
+  .cpile .stk img { width: 100%; height: 100%; display: block; }
+  .cpile b { font-size: 12px; } .cpile small { font-size: 10px; opacity: .85; }
+  .cpile.ready { transform: scale(1.15); }
+  .cpile.ready .stk i { box-shadow: 0 0 10px 3px rgba(120,170,255,.95); }
+  #result > .resinfo:has(.cardfloat) { max-height: none; }
+  #alloc > .charinfo:has(.cardfloat) { align-items: center; }
+  /* the map ahead's 難度 (game.js drawMap): 普通 / 困難, once a map is won */
+  .diff { flex: none; display: flex; align-items: center; gap: 4px; padding: 0 0 6px; margin-bottom: 4px; border-bottom: 1px solid #dde3ee; }
+  .diff .k { color: var(--labeltext); font-weight: bold; margin-right: 2px; }
+  .diff .small { margin-left: 4px; }
+  /* 建立隊伍's foot: the level chain picked */
+  .bb .chainpick { display: flex; align-items: center; gap: 4px; min-width: 0; }
+  .bb .chainpick select { min-width: 0; }
+  /* (by request, the waves alone scrolled, the map's head kept in sight over them) */
+  [data-pane="map"] > .wb { overflow: hidden; display: flex; flex-direction: column; }
+  #p-map { flex: 0 1 auto; min-height: 0; display: flex; flex-direction: column; }
+  .maphead { flex: none; }
+  .waves { display: flex; flex-direction: column; flex: 0 1 auto; min-height: 0; overflow: auto; }
+  .wave { display: grid; grid-template-columns: 36px 1fr; gap: 4px; align-items: center; padding: 3px 0; border-bottom: 1px solid #eef1f6; }
+  .wave:last-child { border-bottom: 0; }
+  .wave .wn { color: var(--labeltext); font-weight: bold; text-align: center; font-size: 11px; white-space: nowrap; }
+  .wave.boss .wn { color: #6a3fb0; }
+  .wave .mobs { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 3px 6px; }
+  .mob { display: grid; grid-template-columns: 32px 1fr; gap: 4px; align-items: center; min-width: 0; cursor: pointer; border-radius: 3px; }
+  .mob.on { background: #e3eafb; box-shadow: 0 0 0 1px #8fa6dc; }
+  .mob canvas { width: 32px; height: 32px; }
+  .mob .t { min-width: 0; line-height: 15px; }
+  .mob b { display: block; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mob small { display: block; color: var(--muted); font-size: 11px; white-space: nowrap; }
+  /* 商店: an NPC's shop */
+  .bagrow { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: center; min-height: 24px; padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px solid #eef1f6; }
+  .bagit { display: inline-flex; align-items: center; } .bagit img { width: 22px; height: 22px; }
+  .item { display: grid; grid-template-columns: 26px 1fr auto auto; gap: 4px; align-items: center; padding: 2px 0; border-bottom: 1px solid #eef1f6; }
+  .item img { width: 24px; height: 24px; }
+  .item .what { min-width: 0; display: flex; flex-direction: column; line-height: 1.2; }
+  .item small { font-size: 11px; color: var(--muted); }
+  .item .price { text-align: right; display: flex; flex-direction: column; line-height: 1.2; color: #3a50a0; }
+  .item .price small { color: var(--muted); }
+  .item.off { opacity: .4; }
+  /* 武器: a weapon's buttons (one for each character that can hold it) in a row of their own under it */
+  /* 裝備: the six slots two by two, a hand's list under them */
+  .gearslots { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+  .gearslots .rb { display: flex; align-items: center; gap: 4px; justify-content: flex-start; min-width: 0; height: auto; min-height: 30px; padding: 2px 6px; }
+  .gearslots .gk { color: var(--labeltext); min-width: 2em; text-align: left; }
+  .gearslots .gn { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gearslots img { width: 24px; height: 24px; flex: none; }
+  .gearlist { margin-top: 6px; }
+  .item.gpick { grid-template-columns: 26px 1fr auto; }
+  .step { display: flex; gap: 1px; }
+  .step .rb { min-width: 0; width: 28px; padding: 0; }
+  /* the fight (by request, bare: no windows): in the top left the map's minimap, by it the level, its map and the wave (1/4), all one size (11px), the bag and the zeny in a row under them */
+  #hud { position: fixed; inset: 0; pointer-events: none; }
+  #hud[hidden] { display: none; }
+  .wavebar { position: absolute; left: 8px; top: 8px; color: #fff; font-weight: bold; white-space: nowrap; zoom: var(--z);
+             text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+             font-size: 11px; display: flex; align-items: center; gap: 6px; }
+  #h-mini { width: 36px; height: 36px; border: 1px solid rgba(0,0,0,.6); }
+  #h-mini[hidden] { display: none; }
+  .wavebar .lv { display: flex; align-items: baseline; gap: 8px; }
+  .bagcol { display: flex; align-items: center; gap: 8px; }
+  .bagcol span { display: flex; align-items: center; gap: 1px; }
+  .bagcol img { width: 22px; height: 22px; }
+  /* 選項 open: the rest put away (game.js showSettings) */
+  body.setting .screen:not(#s-set):not(#s-title), body.setting #s-title .titlewin, #s-title.back .titlewin, body.setting #hud, body.setting #replaybar { visibility: hidden; }
+  /* going to town: the screen fading to black and back (game.js fadeOut) */
+  #fade { position: fixed; inset: 0; z-index: 8; background: #000; opacity: 0; pointer-events: none; transition: opacity .45s; }
+  #fade.on { opacity: 1; pointer-events: auto; }
+  /* the loading screen as a map is entered: black, a bar in the middle (by request, not the client's loading##.jpg) */
+  #loading { position: fixed; inset: 0; z-index: 5; background: #000; display: flex; align-items: center; justify-content: center; }
+  #loading[hidden] { display: none; }
+  #loading .lbar { width: min(70vw, 480px); height: 10px; border: 1px solid #8f9fbf; background: rgba(0,0,0,.5); }
+  #loading .lbar i { display: block; height: 100%; width: 0; background: linear-gradient(#9fc2ff, #3d6bd6); transition: width .2s; }
+  /* the other windows: 結算, 配點, 紀錄, 設定 */
+  .dlg { width: 420px; max-width: calc((100vw - 24px) / var(--z)); max-height: calc((100dvh - 24px) / var(--z)); }
+  .dlg.wide { width: 600px; }
+  .dlg h4 { margin: 6px 0 3px; color: var(--labeltext); font-size: 12px; }
+  .dlg table { width: 100%; border-collapse: collapse; }
+  /* 繼續遊戲's list: a card a game (game.js pickSave) */
+  .savedlg { width: 320px; }
+  .save { border: 1px solid #c8d2e6; border-radius: 4px; padding: 4px 6px; cursor: pointer; }
+  .save + .save { margin-top: 6px; }
+  .save:hover { background: #f2f6fd; border-color: #8f9fbf; }
+  .save .when { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 11px; }
+  .save .who { display: flex; gap: 10px; margin: 3px 0; }
+  .save .who span { display: flex; flex-direction: column; align-items: center; min-width: 0; }
+  .save .who canvas { width: 40px; height: 40px; }
+  .save .who small { font-size: 10px; line-height: 12px; color: var(--muted); text-align: center; white-space: nowrap; }
+  .save .where { font-weight: bold; color: var(--labeltext); }
+  .save .where small { font-weight: normal; color: var(--muted); margin-left: 6px; }
+  /* (過往紀錄: one from before parties were kept whole, listed only) */
+  .save.old { cursor: default; opacity: .6; } .save.old:hover { background: none; border-color: #c8d2e6; }
+  .dlg td { padding: 1px 4px; border-bottom: 1px solid #eef1f6; }
+  .dlg td.num { text-align: right; white-space: nowrap; }
+  .dlg td img { width: 24px; height: 24px; vertical-align: middle; }
+  .dlg tr.total td { font-weight: bold; }
+  /* 全滅's replay: ▶, the timeline, the time */
+  #replaybar { position: fixed; left: calc(8px / var(--z)); bottom: calc((8px + env(safe-area-inset-bottom)) / var(--z)); z-index: 9; width: calc((100vw - 16px) / var(--z)); }
+  #replaybar[hidden] { display: none; }
+  .replay { display: flex; align-items: center; gap: 6px; padding: 4px 6px; }
+  #rp-play { min-width: 0; width: 28px; padding: 0; }
+  #rp-rate { min-width: 0; width: 44px; padding: 0; }
+  .replay input { flex: 1; min-width: 0; }
+  #rp-time { font-size: 11px; color: var(--muted); white-space: nowrap; }
+  .dlg .head { color: var(--labeltext); font-weight: bold; font-size: 14px; }
+  .zbig { font: bold 16px Tahoma, sans-serif; color: #3a50a0; }
+  .bagrep th { font-weight: normal; color: var(--labeltext); font-size: 11px; } .bagrep td.num, .bagrep th.num { padding-left: 10px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 599px) { .two { grid-template-columns: 1fr; } }
+  /* 配點: the status window and the skill tree */
+  /* (narrow enough for a phone: 254 px inside) */
+  .statwin { display: grid; grid-template-columns: 22px 24px 11px 11px 12px 42px 1fr 38px 1fr; gap: 2px 2px; align-items: center; white-space: nowrap; }
+  /* (another's: no arrows nor costs) */
+  .statwin.auto { grid-template-columns: 24px 26px 44px 1fr 40px 1fr; }
+  .statwin .k { color: var(--labeltext); font-weight: bold; }
+  .statwin .k.wide { grid-column: span 2; }
+  .statwin.auto .k.wide { grid-column: auto; } .statwin.auto .k.wide + span { grid-column: span 3; }
+  .statwin .v { background: var(--cell); text-align: right; padding: 0 3px; height: 15px; line-height: 15px; }
+  .statwin .c { color: var(--muted); font-size: 10px; }
+  .statwin:not(.auto) > span:nth-child(9n+6), .statwin.auto > span:nth-child(6n+3) { border-left: 1px solid #dde3ee; padding-left: 5px; }
+  .statdlg { width: 340px; }
+  /* a character's status and skills at the screen's foot (by request: the camera on it above them), the field
+     around them still taking taps (another character, or anywhere else to close them) */
+  #s-alloc { align-items: flex-end; padding: 8px; background: none; pointer-events: none; }
+  /* (by request: one window, 素質, 技能 or 行動, the tabs under it; its body scrolls, the rest stays) */
+  #alloc > .charinfo { pointer-events: auto; display: flex; flex-direction: column; gap: 6px; max-height: calc(100dvh - 16px - 150px); }
+  #alloc > .charinfo > .win { flex: 0 1 auto; max-height: calc((100dvh - 16px - 150px - 30px * var(--z)) / var(--z)); }
+  #alloc .tab-act { height: calc(50dvh / var(--z)); }  /* (half the screen: by request) */
+  /* the statuses on the one shown, in the fight (game.js stateIcons): a row over its window, more going up; as wide
+     as the window, never widening it */
+  #alloc .states { zoom: var(--z); width: 0; min-width: 100%; display: flex; flex-direction: column; gap: 3px; }
+  #alloc .strow { display: flex; flex-wrap: wrap-reverse; gap: 2px; }
+  #alloc .strow:empty { display: none; }
+  #alloc .st { position: relative; width: 26px; height: 28px; min-width: 0; padding: 0; border: 0; background: none; box-shadow: none; }
+  #alloc .st img { display: block; width: 24px; height: 24px; margin: 0 1px; filter: drop-shadow(0 0 1px #000); }
+  /* (the time left: the icon from its foot up to --left, the rest half transparent (the same icon under it, at 40%); by request) */
+  #alloc .st img.bg { position: absolute; top: 0; left: 0; opacity: .4; }
+  #alloc .st img:not(.bg) { --m: linear-gradient(to top, #000 var(--left, 100%), transparent var(--left, 100%)); -webkit-mask-image: var(--m); mask-image: var(--m); }
+  #alloc .st.on img { outline: 2px solid var(--accent); outline-offset: 0; border-radius: 2px; }
+  #alloc .stcap { background: rgba(0,0,0,.6); color: #fff; border-radius: 4px; padding: 3px 6px; font-size: 11px; line-height: 15px; }
+  #alloc .stcap b { color: #9bca9b; }
+  .rules { margin: 0; padding: 0 0 0 20px; }
+  .rules li { padding: 2px 0; border-bottom: 1px solid #eef1f6; }
+  .rules li.off { opacity: .45; }
+  .rules li.on { background: #e6edfd; }
+  .rules .rdo { display: flex; align-items: center; gap: 3px; font-weight: bold; }
+  .rules .rdo img { width: 20px; height: 20px; }
+  .rules .rp { font-size: 11px; color: var(--muted); }
+  .rules .lab { color: var(--labeltext); margin-right: 4px; }
+  .tacs { display: flex; align-items: center; gap: 4px; margin: 0 0 6px; }
+  .tacs .lab { color: var(--labeltext); margin-right: 2px; }
+  /* the skill tree (game.js treeLayout: as the sandbox's) */
+  .sktree { position: relative; }
+  .sktree svg { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+  .sktree path { fill: none; stroke: #9aa8c4; stroke-width: 1.5; }
+  .sktree path.bad { stroke: var(--bad); }
+  .sktree .skt { position: absolute; }
+  .skloose { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sktree + .skloose { margin-top: 10px; }
+  .skt { position: relative; display: block; width: 32px; height: 32px; border-radius: 4px; cursor: pointer; padding: 0; border: 1px solid transparent; background: none; font: inherit; }
+  .skt:hover { background: #e6edfd; border-color: #6f86c4; }
+  .skt img { position: absolute; left: 3px; top: 2px; width: 24px; height: 24px; }
+  .skt b { position: absolute; right: 1px; bottom: 0; font: bold 10px/1.1 Tahoma, sans-serif; color: var(--labeltext); }
+  .skt.unlearned img { opacity: .35; }
+  .skt.new b { color: var(--accent); }
+  /* a skill's details (game.js skillInfo) */
+  .skwin { width: 400px; }
+  .skhead { display: flex; align-items: center; gap: 8px; }
+  .skhead > img { width: 28px; height: 28px; }
+  .skhead > div:not(.sklv) { flex: 1; min-width: 0; }
+  .skhead b { font-size: 13px; color: var(--labeltext); }
+  .sklv { display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .sklv b { background: var(--cell); padding: 0 6px; height: 16px; line-height: 16px; font-size: 12px; }
+  .skmeta { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .skmeta span { font-size: 11px; color: var(--labeltext); background: var(--label); border-radius: 3px; padding: 0 6px; }
+  .skdesc { margin-top: 6px; }
+  .skdesc p { margin: 0 0 3px; }
+  .skreqs { list-style: none; margin: 0; padding: 0; }
+  .skreqs li { display: grid; grid-template-columns: 26px auto 1fr; gap: 4px; align-items: center; }
+  .skreqs li img { width: 24px; height: 24px; }
+  .skreqs li .muted { text-align: right; }
+  .skreqs li.bad span:not(.muted) { color: var(--bad); }
+  .sklvs { display: flex; flex-direction: column; }
+  .sklvs button { display: grid; grid-template-columns: 38px 44px 1fr; gap: 6px; align-items: baseline; text-align: left; background: none;
+                  border: 1px solid transparent; border-bottom-color: #eef1f6; color: var(--text); font: inherit; padding: 2px 4px; cursor: pointer; }
+  .sklvs button:hover:not(:disabled) { background: #e6edfd; }
+  .sklvs button.on { border-color: #6f86c4; background: var(--cell); font-weight: bold; }
+  .sklvs button:disabled { color: #aaa; cursor: default; }
+  .sklvs .sp, .sklvs .txt { color: var(--muted); font-size: 11px; }
+  .sklvs button.on .sp, .sklvs button.on .txt { color: var(--text); font-weight: normal; }
+  .opt { display: grid; grid-template-columns: 50px 1fr; gap: 6px; align-items: center; margin: 6px 0; }
+  .opt .k { color: var(--labeltext); font-weight: bold; }
+  .opt input[type=range] { width: 100%; }
+  /* 選項 › 離線's progress */
+  .offbar { height: 6px; margin: 3px 0; background: var(--cell); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  .offbar i { display: block; height: 100%; background: var(--accent); }
+  .seg { display: flex; gap: 2px; }
+  .seg .rb { min-width: 0; padding: 0 7px; }
+</style>
+<script>
+// The game's modules and the viewer's it is built on, under a query that changes with every page load (iOS
+// Safari keeps a cached ES module without asking: see viewer/index.html)
+{
+  const v = '?v=' + Date.now(), own = ['sim.js', 'grid.js', 'battle.js', 'arena.js', 'walker.js', 'effects.js', 'levels.js', 'fight.js', 'rng.js', 'builds.js', 'look.js', 'stage.js', 'assets.js', 'devlog.js'];
+  const imports = { three: '../viewer/vendor/three/three.module.js', 'three/addons/': '../viewer/vendor/three/addons/', './game.js': './game.js' + v, './places.js': './places.js' + v, './needs.js': './needs.js' + v };
+  for (const f of own) imports['../viewer/' + f] = '../viewer/' + f + v;
+  const map = document.createElement('script');
+  map.type = 'importmap';
+  map.textContent = JSON.stringify({ imports });
+  document.head.append(map);
+}
+</script>
+</head>
+<body>
+<div id="arena"><canvas id="stage"></canvas><canvas id="fx"></canvas></div>
+
+<div id="hud" hidden>
+  <div class="wavebar"><img id="h-mini" alt="" hidden><div><div class="lv"><span id="h-lv"></span><span id="h-wave"></span></div><div class="bagcol" id="h-bag"></div></div></div>
+</div>
+
+<!-- 全滅's replay (game.js gameOver): ▶ / ❚❚, the timeline, the time, 結束 -->
+<div class="win" id="replaybar" hidden><div class="wb replay"><button class="rb" id="rp-play" aria-label="播放／暫停">▶</button>
+  <input type="range" id="rp-seek" min="0" max="1" value="0" aria-label="重播位置"><span id="rp-time"></span><button class="rb" id="rp-rate" aria-label="重播速度">100%</button><button class="rb" id="rp-end">結束</button></div></div>
+
+<div id="fade"></div>
+<div id="loading" hidden><div class="lbar"><i></i></div></div>
+
+<section class="screen" id="s-title" hidden>
+  <img class="logo" src="../assets/png/ui/logo.png" alt="Ragnarok Online">
+  <div class="win titlewin">
+    <div class="tb">Ragnarok</div>
+    <div class="menu">
+      <button class="rb" id="t-new">新遊戲</button>
+      <button class="rb" id="t-cont">繼續遊戲</button>
+      <div class="saved" id="t-party"></div>
+      <button class="rb" id="t-hist">過往紀錄</button>
+      <div class="saved" id="t-assets" hidden></div>
+    </div>
+    <div class="bb"></div>
+  </div>
+</section>
+
+<section class="screen dim" id="s-create" hidden><div id="create"></div></section>
+<section class="screen" id="s-prep" hidden><div class="prep" id="prep"></div></section>
+<!-- (結算 and 全滅 over the field going on, not dimmed: by request) -->
+<section class="screen" id="s-result" hidden><div id="result"></div></section>
+<!-- a character's status and skills, over the map ahead -->
+<section class="screen layer" id="s-alloc" hidden><div id="alloc"></div></section>
+<section class="screen dim" id="s-hist" hidden><div id="hist"></div></section>
+<!-- 繼續遊戲 with more than one game going: which -->
+<section class="screen dim" id="s-saves" hidden><div id="saves"></div></section>
+<!-- a skill's details, over 配點 -->
+<section class="screen layer" id="s-skill" hidden><div id="skill"></div></section>
+<!-- 設定: over whatever is on (the fight goes on under it) -->
+<section class="screen layer" id="s-set" hidden><div id="set"></div></section>
+<button class="rb" id="setbtn" title="選項" aria-label="選項"><svg viewBox="0 0 24 24"><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1l.3 2.6h4l.4-2.6a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></button>
+
+<script src="../viewer/packs.js"></script>
+<script type="module">import './game.js';</script>
+</body>
+</html>
